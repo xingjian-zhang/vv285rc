@@ -1,0 +1,295 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{float} 
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{indentfirst} 
+\usepackage[style=mla]{biblatex}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{textpos}
+
+\definecolor{Turquoise3}{RGB}{0, 134, 139}
+\renewcommand{\emph}[1]{{\color{Turquoise3}\textsl{#1}}}
+\newcommand{\C}{\mathbb{C}} \newcommand{\F}{\mathbb{F}} \newcommand{\R}{\mathbb{R}} \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\myseries}[2]{$#1_1,#1_2,\dots,#1_#2$}
+\newcommand{\nullspace}{~\\[15pt]}
+
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+\addtobeamertemplate{frametitle}{}{
+\begin{textblock*}{100mm}(0.85\textwidth,-1cm)
+\includegraphics[height=1cm]{logo.png}
+\end{textblock*}}
+
+\definecolor{themecolor}{RGB}{25,25,112} 
+
+\usecolortheme[named=themecolor]{structure}
+
+\setbeamertemplate{items}[default]
+
+
+\title{VV285 RC Part I}
+\subtitle{\textbf{Elements of Linear Algebra}\\``Matrices are just linear maps!"}
+\institute[UM-SJTU JI]{Univerity of Michigan-Shanghai Jiao Tong University Joint Institute}
+\author{Xingjian Zhang}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \begin{center}
+        \includegraphics[height=2cm]{logo2.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \
+    \frametitle{Overview of Linear Algebra}
+    \begin{enumerate}
+        \item Systems of Linear Equations
+        \item Finite-Dimensional Vector Spaces
+        \item Inner Product Spaces
+        \item Linear Maps
+        \item Matrices
+        \item Theory of Systems of Linear Equations
+        \item Determinants
+    \end{enumerate}
+\end{frame}
+
+\section{Systems of Linear Equations}
+\begin{frame}
+    \frametitle{Overview}
+    \begin{enumerate}
+        \item Linear System
+              \\ Homogeneous vs. Inhomogeneous
+              \\ Underdetermined vs. Overdetermined
+        \item Equivalency of Linear System
+        \item The Gauß – Jordan Algorithm
+        \item Diagonalizable (Existence and Uniqueness of Linear System)
+        \item \textbf{Fundamental Lemma for Homogeneous Equations}
+    \end{enumerate}
+\end{frame}
+
+\subsection{Linear System}
+\begin{frame}
+    \frametitle{Definition}
+
+    A \emph{linear system} of $m$ (algebraic) equations in $n$ unknowns \myseries{x}{n}$\in V$ is a set of equations
+    \begin{equation}
+        \begin{aligned}
+            a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n & =b_1   \\
+            a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n & =b_2   \\
+                                                 & \vdots \\
+            a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n & =b_m
+        \end{aligned}
+        \label{eq1}
+    \end{equation}
+
+    where \myseries{b}{m}$\in V$ and $a_{ij}\in\F,i=1,\ldots,m,~j=1,\ldots,n.$\\
+    If $b_1=b_2=\cdots=b_m=0$, then \eqref{eq1} is called a \emph{homogeneous system}. Otherwise, it is called an \emph{inhomogeneous system.}
+
+    If $m<n$ we say that the system in \emph{underdetermined}, if $m>n$ the system is called \emph{overdetermined}.
+    A solution of a linear system of equations \eqref{eq1} is a tuple of elements (\myseries{y}{n})$\in V^n$ such that the predicate \eqref{eq1} becomes a true statement.\\[3pt]
+\end{frame}
+
+\subsection{Equivalence of Linear System}
+\begin{frame}
+    \frametitle{Definition}
+    We say that two systems of linear equations are \emph{equivalent} if any solution
+    of the first system is also a solution of the second system and vice-versa.
+    Thus the systems
+    \begin{equation*}
+        \begin{aligned}
+            x_1+3x_2-x_3    & =1 \\
+            ~~~~~~-5x_2+x_3 & =1 \\
+            ~~~~~~10x_2+x_3 & =1
+        \end{aligned}
+        \qquad\qquad\text{and}\qquad\qquad
+        \begin{aligned}
+            x_1 & =2 \\x_2&=0\\x_3&=1
+        \end{aligned}
+    \end{equation*} are \emph{equivalent}.
+\end{frame}
+
+\subsection{Gau\ss-Jordan Algorithm}
+\begin{frame}
+    \frametitle{Algorithm}
+    The goal of the \emph{Gau\ss-Jordan algorithm} (also called Gau\ss ian elimination) is to transform a system
+    \begin{equation*}
+        \begin{tabular}{ccc|c}
+            $\ast$ & $\ast$ & $\ast$ & $\diamond$ \\
+            $\ast$ & $\ast$ & $\ast$ & $\diamond$ \\
+            $\ast$ & $\ast$ & $\ast$ & $\diamond$ \\
+        \end{tabular}
+        \qquad\qquad\qquad\qquad
+        \ast\in~\R~or~\C,~~\diamond\in V
+    \end{equation*}
+
+    first into the form \\
+    \begin{equation}
+        \begin{array}{c}
+            \begin{tabular}{|ccc|c}
+                1 & $\ast$ & $\ast$ & $\diamond$ \\ \cline{1-1}
+            \end{tabular} \\
+            \begin{tabular}{c|cc|c}
+                0 & $1$ & $\ast$ & $\diamond$ \\ \cline{2-2}
+            \end{tabular} \\
+            \begin{tabular}{cc|c|c}
+                0 & $0$ & $1$ & $\diamond$ \\
+                \cline{3-3}
+            \end{tabular}
+        \end{array}
+    \end{equation}
+
+    and subsequently into \\
+    \begin{equation}
+        \begin{array}{c}
+            \begin{tabular}{|ccc|c}
+                1 & $0$ & $0$ & $\diamond$ \\ \cline{1-1}
+            \end{tabular} \\
+            \begin{tabular}{c|cc|c}
+                0 & $1$ & $0$ & $\diamond$ \\ \cline{2-2}
+            \end{tabular} \\
+            \begin{tabular}{cc|c|c}
+                0 & $0$ & $1$ & $\diamond$ \\
+                \cline{3-3}
+            \end{tabular}
+        \end{array}
+    \end{equation}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Elementary Row Manipulations}
+    \textbf{Include:}
+    \begin{enumerate}
+        \item Swapping (interchanging) two rows,
+        \item Multiplying each element in a row with a number,
+        \item Adding a multiple of one row to another row.
+    \end{enumerate}
+    ~\\[15pt]
+
+    \textbf{Result:} Transform a system into a equivalent system.
+    Since each row represents an equation, we are essentially \textbf{manipulating equations}.
+\end{frame}
+
+\subsection{Existence and Uniqueness of Solutions}
+\begin{frame}
+    \frametitle{Diagonalizable}
+    A system of m equations with n unknowns will have a unique solution if and only if it is \emph{diagonalizable}. i.e. It can be transformed into diagonal form.\\[15pt]
+    \textbf{Remark:} \emph{Diagonalization} turns out to be an important topic in VV286, especially in terms of \emph{ordinary differential equation systems}.
+\end{frame}
+
+\subsection{Fundamental Lemma for Homogeneous Equations}
+\begin{frame}
+    \frametitle{Lemma}
+    The homogeneous system
+    \begin{align*}
+        a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n & =0       \\
+                                             & ~~\vdots \\
+        a_{m1}x_1+a_{m2}x_2+\cdots+a_{mn}x_n & =0
+    \end{align*}
+    of $m$ equations in $n$ real or complex unknowns \myseries{x}{n} has a \textbf{non-trivial} solution if $n>m$.\\[15pt]
+
+    \textbf{Remark:} This fundamental lemma contributes to prove that any basis of a vector space has the same length.
+
+\end{frame}
+
+\section{Finite-Dimensional Vector Spaces}
+
+\begin{frame}
+    \frametitle{Overview}
+    \begin{enumerate}
+        \item Linear Independence
+        \item Span
+        \item Basis
+        \item Dimension
+        \item Basis Extension Theorem
+        \item Sum of Vector Space
+    \end{enumerate}
+\end{frame}
+
+\subsection{Linear Independence}
+\begin{frame}
+    \frametitle{Definition}
+    Let $V$ be a real or complex vector space and \myseries{v}{n}$\in V$. Then the vectors \myseries{v}{n} are said to be \emph{independent} if for all \myseries{\lambda}{n}$\in\F$ \vspace*{-4mm}
+    \[\sum_{k=1}^{n}\lambda_kv_k=0\qquad\Rightarrow\qquad\lambda_1=\lambda_2=\cdots=\lambda_n=0.\]
+
+    A finite set $M\subset V$ is called an \emph{independent set} if the elements of $M$ are independent.
+\end{frame}
+
+\subsection{Span}
+\begin{frame}
+    \frametitle{Definition}
+    Let \myseries{v}{n}$\in V$ and \myseries{\lambda}{n}$\in\F$. Then the expression
+    \begin{equation*}
+        \sum_{k=1}^{n}\lambda_kv_k=\lambda_1v_1+\cdots+\lambda_nv_n
+    \end{equation*}
+    is called a \emph{linear combination} of the vectors \myseries{v}{n}.\\
+    The set
+    \[\text{span}\{v_1,\ldots,v_n\}=\left\{y\in V:y=\sum_{k=1}^{n}\lambda_kv_k,\lambda_1,\ldots,\lambda_n\in\F\right\}\]
+    is called the \emph{(linear) span} or the \emph{linear hull} of the vectors \myseries{v}{n}.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Lemma}
+    The vectors \myseries{v}{n}$\in V$ are independent if and only if
+    \textbf{none of them is contained in the span of all the others}.
+    \\[15pt]
+    (How to prove?)
+\end{frame}
+
+\subsection{Basis}
+\begin{frame}
+    \frametitle{Definition}
+    Let $V$ be a real or complex vector space. An $n$-tuple $\mathcal{B}=(b_1,\ldots,b_n)\in V^n$ is called an \emph{(ordered and finite) basis} of $V$
+    if every vector $v$ has a \textbf{unique} representation
+    \[v=\sum_{i=1}^{n}\lambda_ib_i,\qquad\qquad\qquad\qquad\lambda_i\in\F.\]
+    The numbers $\lambda_i$ are called the \emph{coordinates} of $v$ with respect to $\mathcal{B}$.
+    \\[15pt]
+    The tuple of vectors (\myseries{e}{n}), $e_i\in\R^n$,
+    \begin{equation*}
+        e_i=(0,\ldots 0,\mathop{1}_{\begin{subarray}{c}
+                \uparrow\\  i\text{th}\\ \text{entry}\end{subarray}},0,\ldots,0),\qquad\qquad i=1,\ldots,n,
+    \end{equation*}
+    is called the \emph{standard basis} or \emph{canonical basis} of $\R^n$.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Theorem}
+    Let $V$ be a real or complex vector space.\\ An $n$-tuple $\mathcal{B}=(b_1,\ldots,b_n)\in V^n$ is a basis of $V$ if and only if
+    \begin{enumerate}
+        \item the vectors \myseries{b}{n} are linearly independent, i.e., $\mathcal{B}$ is an independent set,
+        \item $V=\text{span}~\mathcal{B}.$
+    \end{enumerate}
+    (How to prove?)
+    \nullspace
+    \textbf{Remark:} This theorem is more practical than the definition of basis when proving some set is a basis of some vector space.
+\end{frame}
+
+\subsection{Dimension}
+\begin{frame}
+    \frametitle{Definition}
+    Let $V$ be a real or complex finite-dimensional vector space, $V\neq\{0\}$. \textbf{Then any basis of $V$ has the same length }(number of elements).
+    \nullspace
+    \textbf{Remark:} This theorem can be proved by contradiction (Use the definition of basis and the fundamental lemma for homogeneous equations). With such a limitation, we can then define the \emph{dimension} of vector space.
+    \nullspace
+    Let $V$ be a real or complex vector space. Then $V$ is called \emph{finite-dimensional} if either
+    \begin{itemize}
+        \item $V={0}$ or
+        \item $V$ possesses a finite basis.
+    \end{itemize}
+    If $V$ is not finite-dimensional, we say that it is \emph{infinite-dimensional}.
+\end{frame}
+
+
+
+\end{document}
