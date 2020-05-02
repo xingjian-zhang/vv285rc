@@ -20,6 +20,7 @@
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\myseries}[2]{$#1_1,#1_2,\dots,#1_#2$}
 \newcommand{\nullspace}{~\\[15pt]}
+\newcommand{\remark}{\textbf{Remark:}}
 
 \usetheme{Madrid}
 \setbeamertemplate{navigation symbols}{}
@@ -35,6 +36,13 @@
 
 \setbeamertemplate{items}[default]
 
+\hypersetup{
+    colorlinks=true,
+    linkcolor=themecolor,
+    filecolor=themecolor,      
+    urlcolor=themecolor,
+    citecolor=themecolor,
+}
 
 \title{VV285 RC Part I}
 \subtitle{\textbf{Elements of Linear Algebra}\\``Matrices are just linear maps!"}
@@ -177,13 +185,16 @@
     ~\\[15pt]
 
     \textbf{Result:} Transform a system into a equivalent system.
-    Since each row represents an equation, we are essentially \textbf{manipulating equations}.
+    Since each row represents an equation, we are essentially \textbf{manipulating equations}.\nullspace
+
+    \textbf{Extension:}
+    \href{https://en.wikipedia.org/wiki/Gaussian_elimination\#Applications}{The application of Gau\ss-Jordan Algorithm}
 \end{frame}
 
 \subsection{Existence and Uniqueness of Solutions}
 \begin{frame}
     \frametitle{Diagonalization}
-    A system of m equations with n unknowns will have a unique solution if and only if it is \emph{diagonalizable}. i.e. It can be transformed into diagonal form.\\[15pt]
+    A system of $m$ equations with $n$ unknowns will have a unique solution if and only if it is \emph{diagonalizable}. i.e. It can be transformed into diagonal form.\\[15pt]
     \textbf{Remark:} \emph{Diagonalization} turns out to be an important topic in VV286, especially in terms of \emph{ordinary differential equation systems}.
 \end{frame}
 
@@ -252,8 +263,8 @@
     \frametitle{Basis}
     Let $V$ be a real or complex vector space. An $n$-tuple $\mathcal{B}=(b_1,\ldots,b_n)\in V^n$ is called an \emph{(ordered and finite) basis} of $V$
     if every vector $v$ has a \textbf{unique} representation
-    \begin{equation}\label{eq:basis}
-        v=\sum_{i=1}^{n}\lambda_ib_i,\qquad\qquad\qquad\qquad\lambda_i\in\F.
+    \begin{equation}
+        v=\sum_{i=1}^{n}\lambda_ib_i,\qquad\qquad\qquad\qquad\lambda_i\in\F.\label{basis}
     \end{equation}
     The numbers $\lambda_i$ are called the \emph{coordinates} of $v$ with respect to $\mathcal{B}$.
     \\[15pt]
@@ -274,7 +285,7 @@
     \end{enumerate}
     (How to prove?)
     \nullspace
-    \textbf{Remark:} This theorem is more practical than the definition of basis when proving some set is a basis of some vector space. It helps one decompose the proof into two parts: 1. prove linear independence (uniqueness of Eq.\ref{eq:basis}) 2. prove the span is large enough (existence of Eq.\ref{eq:basis}). 
+    \textbf{Remark:} This theorem is more practical than the definition of basis when proving some set is a basis of some vector space. It helps one decompose the proof into two parts: 1. prove linear independence (uniqueness of \eqref{basis}) 2. prove the span is large enough (existence of \eqref{basis}).
 \end{frame}
 
 \subsection{Dimension}
@@ -292,6 +303,101 @@
     If $V$ is not finite-dimensional, we say that it is \emph{infinite-dimensional}.
 \end{frame}
 
+\begin{frame}
+    \frametitle{Basis Extension Theorem}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{chart1.png}
+        \caption{Logic Flow of Basic Extension Theorem}
+        \label{fig:bet}
+    \end{figure}
+    An interpretation of ``\textbf{maximal}'': the max (in size) independent subset of some set.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Basis Extension Theorem}
+    Let $V$ be a finite-dimensional vector space and $A'\subset V$ an independent set. Then there exists a basis of $V$ containing $A'$.
+    \nullspace
+    \remark\\
+    The basis extension theorem is fundamental. It tells us that for any independent subset $A'$ of a finite-dimensional vector space $V$, we can always find and add dim $V-|A'|$ elements to $A'$ to extend it into a basis of $V$. And two useful corollaries follow immediately:\nullspace
+    Let $V$ be an $n$-dimensional vector space, $n\in\N$. Then\\
+    \begin{enumerate}
+        \item any independent set $A$ with $n$ elements is a basis of $V$.
+        \item an independent set $A$ may have at most $n$ elements.
+    \end{enumerate}
+    (How to prove?)
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sum of Vector Space}
+    Let $V$ be a real or complex vector space and $U,W$ be sets in $V$.
+    \begin{enumerate}[(i)]
+        \item We define the \emph{sum of U and W} by
+              \[U+W:=\left\{v\in V:\mathop{\exists}_{u\in U}\mathop{\exists}_{w\in W}: v=u+w\right\}.\]
+        \item If $U$ and $W$ are subspaces of $V$ with $U\cap W=\{0\}$, the sum $U+W$ is called \emph{direct}, and we denote it by $U\oplus W$.
+    \end{enumerate}
+    Two properties about sum of vector space:\\
+    \begin{enumerate}
+        \item The sum $U+W$ of vector spaces $U,W$ is direct if and only if all $x\in U+W$, $x\neq0$, have a \textbf{unique} representation $x=u+w,~u\in U,w\in W$.
+        \item Let $V$ be a vector space and $U,W\subset V$ be finite-dimensional subspaces of $V$. Then
+        \[\dim(U+W)+\dim(U\cap W)=\dim U+\dim W.\]
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Proof}
+    Suppose $$\left\{v_{1}, \ldots, v_{p}\right\}$$ is a basis for $U \cap W$. 
+    By \emph{Basis Extension Theorem}, we can find a basis
+    $$\left\{v_{1}, \ldots, v_{p}, u_{1}, \ldots, u_{q}\right\}$$ for $U$ and a basis
+    $$\left\{v_{1}, \ldots, v_{p}, w_{1}, \ldots, w_{r}\right\}$$ for $W$.
+    
+    Then we just need to show that $$B=\left\{v_{1}, \ldots, v_{p}, u_{1}, \ldots, u_{q}, w_{1}, \ldots, w_{r}\right\}$$ is a basis for $U+W$\\
+    \framebreak
+    Suppose
+    $$
+        \alpha_{1} v_{1}+\cdots+\alpha_{p} v_{p}+\beta_{1} u_{1}+\cdots+\beta_{q} u_{q}+\gamma_{1} w_{1}+\cdots+\gamma_{r} w_{r}=0
+    $$
+    Then
+    $$
+        x=\underbrace{\alpha_{1} v_{1}+\cdots+\alpha_{p} v_{p}+\beta_{1} u_{1}+\cdots+\beta_{q} u_{q}}_{\epsilon U}=-(\underbrace{\gamma_{1} w_{1}+\cdots+\gamma_{r} w_{r}}_{\in W})
+    $$
+    belongs to $U \cap W$. Thus
+    $$
+        x=\delta_{1} v_{1}+\cdots+\delta_{p} v_{p}
+    $$
+    and therefore
+    $$
+        \delta_{1} v_{1}+\cdots+\delta_{p} v_{p}=-\left(\gamma_{1} w_{1}+\cdots+\gamma_{r} w_{r}\right)
+    $$
+    so that
+    $$
+        \delta_{1} v_{1}+\cdots+\delta_{p} v_{p}+\gamma_{1} w_{1}+\cdots+\gamma_{r} w_{r}=0
+    $$
+    Since the set $\left\{v_{1}, \ldots, v_{p}, w_{1}, \ldots, w_{r}\right\}$ is linearly independent, we conclude
+    $$
+        \delta_{1}=0, \quad \ldots, \quad \delta_{p}=0, \quad \gamma_{1}=0, \quad \ldots, \quad \gamma_{r}=0
+    $$
+    and also that
+    $$
+        \alpha_{1} v_{1}+\cdots+\alpha_{p} v_{p}+\beta_{1} u_{1}+\cdots+\beta_{q} u_{q}=0
+    $$
+    So, from linear independence of $\left\{v_{1}, \ldots, v_{p}, u_{1}, \ldots, u_{q}\right\}$ we get
+    $$
+        \alpha_{1}=0, \quad \ldots, \quad \alpha_{p}=0, \quad \beta_{1}=0, \quad \ldots, \quad \beta_{q}=0
+    $$
+    Therefore, the set $B$ is independent. It is clear that $\text{span} B=U+W$. So we conclude $B$ is a basis for $U+W$, and furthermore,
+    \[\dim(U+W)+\dim(U\cap W)=\dim U+\dim W.\]
+\end{frame}
+
+\begin{frame}
+    \frametitle{Corollary}
+    Let $V$ be a vector space and $U,W\subset V$ be finite-dimensional subspaces of $V$. Then
+        \[\dim(U+W)\leq\dim U+\dim W.\]
+    The condition for ``='': the sum is direct. i.e.
+        \[\dim(U\oplus W)=\dim U+\dim W.\]
+    
+
+\end{frame}
 
 
 \end{document}
