@@ -80,7 +80,7 @@
 
 \subsection{Linear System}
 \begin{frame}
-    \frametitle{Definition}
+    \frametitle{Linear System}
 
     A \emph{linear system} of $m$ (algebraic) equations in $n$ unknowns \myseries{x}{n}$\in V$ is a set of equations
     \begin{equation}
@@ -102,7 +102,7 @@
 
 \subsection{Equivalence of Linear System}
 \begin{frame}
-    \frametitle{Definition}
+    \frametitle{Linear System}
     We say that two systems of linear equations are \emph{equivalent} if any solution
     of the first system is also a solution of the second system and vice-versa.
     Thus the systems
@@ -121,7 +121,7 @@
 
 \subsection{Gau\ss-Jordan Algorithm}
 \begin{frame}
-    \frametitle{Algorithm}
+    \frametitle{Gau\ss-Jordan Algorithm}
     The goal of the \emph{Gau\ss-Jordan algorithm} (also called Gau\ss ian elimination) is to transform a system
     \begin{equation*}
         \begin{tabular}{ccc|c}
@@ -182,14 +182,14 @@
 
 \subsection{Existence and Uniqueness of Solutions}
 \begin{frame}
-    \frametitle{Diagonalizable}
+    \frametitle{Diagonalization}
     A system of m equations with n unknowns will have a unique solution if and only if it is \emph{diagonalizable}. i.e. It can be transformed into diagonal form.\\[15pt]
     \textbf{Remark:} \emph{Diagonalization} turns out to be an important topic in VV286, especially in terms of \emph{ordinary differential equation systems}.
 \end{frame}
 
 \subsection{Fundamental Lemma for Homogeneous Equations}
 \begin{frame}
-    \frametitle{Lemma}
+    \frametitle{Fundamental Lemma for Homogeneous Equations}
     The homogeneous system
     \begin{align*}
         a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n & =0       \\
@@ -218,7 +218,7 @@
 
 \subsection{Linear Independence}
 \begin{frame}
-    \frametitle{Definition}
+    \frametitle{Linear Independence}
     Let $V$ be a real or complex vector space and \myseries{v}{n}$\in V$. Then the vectors \myseries{v}{n} are said to be \emph{independent} if for all \myseries{\lambda}{n}$\in\F$ \vspace*{-4mm}
     \[\sum_{k=1}^{n}\lambda_kv_k=0\qquad\Rightarrow\qquad\lambda_1=\lambda_2=\cdots=\lambda_n=0.\]
 
@@ -227,7 +227,7 @@
 
 \subsection{Span}
 \begin{frame}
-    \frametitle{Definition}
+    \frametitle{Span}
     Let \myseries{v}{n}$\in V$ and \myseries{\lambda}{n}$\in\F$. Then the expression
     \begin{equation*}
         \sum_{k=1}^{n}\lambda_kv_k=\lambda_1v_1+\cdots+\lambda_nv_n
@@ -240,7 +240,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Lemma}
+    \frametitle{Independence $\sim$ Span}
     The vectors \myseries{v}{n}$\in V$ are independent if and only if
     \textbf{none of them is contained in the span of all the others}.
     \\[15pt]
@@ -249,10 +249,12 @@
 
 \subsection{Basis}
 \begin{frame}
-    \frametitle{Definition}
+    \frametitle{Basis}
     Let $V$ be a real or complex vector space. An $n$-tuple $\mathcal{B}=(b_1,\ldots,b_n)\in V^n$ is called an \emph{(ordered and finite) basis} of $V$
     if every vector $v$ has a \textbf{unique} representation
-    \[v=\sum_{i=1}^{n}\lambda_ib_i,\qquad\qquad\qquad\qquad\lambda_i\in\F.\]
+    \begin{equation}\label{eq:basis}
+        v=\sum_{i=1}^{n}\lambda_ib_i,\qquad\qquad\qquad\qquad\lambda_i\in\F.
+    \end{equation}
     The numbers $\lambda_i$ are called the \emph{coordinates} of $v$ with respect to $\mathcal{B}$.
     \\[15pt]
     The tuple of vectors (\myseries{e}{n}), $e_i\in\R^n$,
@@ -264,7 +266,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Theorem}
+    \frametitle{Basis = Independence + Span}
     Let $V$ be a real or complex vector space.\\ An $n$-tuple $\mathcal{B}=(b_1,\ldots,b_n)\in V^n$ is a basis of $V$ if and only if
     \begin{enumerate}
         \item the vectors \myseries{b}{n} are linearly independent, i.e., $\mathcal{B}$ is an independent set,
@@ -272,15 +274,15 @@
     \end{enumerate}
     (How to prove?)
     \nullspace
-    \textbf{Remark:} This theorem is more practical than the definition of basis when proving some set is a basis of some vector space.
+    \textbf{Remark:} This theorem is more practical than the definition of basis when proving some set is a basis of some vector space. It helps one decompose the proof into two parts: 1. prove linear independence (uniqueness of Eq.\ref{eq:basis}) 2. prove the span is large enough (existence of Eq.\ref{eq:basis}). 
 \end{frame}
 
 \subsection{Dimension}
 \begin{frame}
-    \frametitle{Definition}
+    \frametitle{Dimension}
     Let $V$ be a real or complex finite-dimensional vector space, $V\neq\{0\}$. \textbf{Then any basis of $V$ has the same length }(number of elements).
     \nullspace
-    \textbf{Remark:} This theorem can be proved by contradiction (Use the definition of basis and the fundamental lemma for homogeneous equations). With such a limitation, we can then define the \emph{dimension} of vector space.
+    \textbf{Remark:} This theorem can be proved by contradiction (Use the definition of basis and the fundamental lemma for homogeneous equations). With such a premise, we can then define the \emph{dimension} of vector space.
     \nullspace
     Let $V$ be a real or complex vector space. Then $V$ is called \emph{finite-dimensional} if either
     \begin{itemize}
