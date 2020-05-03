@@ -21,3 +21,15 @@
 \beamer@subsectionintoc {2}{3}{Basis}{14}{0}{2}
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {2}{4}{Dimension}{16}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Inner Product Spaces}{24}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{1}{Inner Product Space}{25}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{2}{Induced Norm}{27}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{3}{Orthogonality}{28}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{4}{Projection Theorem}{31}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{5}{Best Approximation}{33}{0}{3}

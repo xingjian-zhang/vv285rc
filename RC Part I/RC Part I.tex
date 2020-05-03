@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage{float} 
+\usepackage{multido}
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{enumerate}
@@ -20,7 +21,9 @@
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\myseries}[2]{$#1_1,#1_2,\dots,#1_#2$}
 \newcommand{\nullspace}{~\\[15pt]}
-\newcommand{\remark}{\textbf{Remark:}}
+\newcommand{\remark}{\textbf{Remark: }}
+\newcommand{\scp}[2]{\langle\,#1\,,\,#2\,\rangle} \newcommand{\scpp}{\langle\,\cdot\,,\,\cdot\,\rangle}
+
 
 \usetheme{Madrid}
 \setbeamertemplate{navigation symbols}{}
@@ -340,26 +343,26 @@
     \begin{enumerate}
         \item The sum $U+W$ of vector spaces $U,W$ is direct if and only if all $x\in U+W$, $x\neq0$, have a \textbf{unique} representation $x=u+w,~u\in U,w\in W$.
         \item Let $V$ be a vector space and $U,W\subset V$ be finite-dimensional subspaces of $V$. Then
-        \[\dim(U+W)+\dim(U\cap W)=\dim U+\dim W.\]
+              \[\dim(U+W)+\dim(U\cap W)=\dim U+\dim W.\]
     \end{enumerate}
 \end{frame}
 
 \begin{frame}[allowframebreaks]
     \frametitle{Proof}
-    Suppose $$\left\{v_{1}, \ldots, v_{p}\right\}$$ is a basis for $U \cap W$. 
+    Suppose $$\left\{v_{1}, \ldots, v_{p}\right\}$$ is a basis for $U \cap W$.
     By \emph{Basis Extension Theorem}, we can find a basis
     $$\left\{v_{1}, \ldots, v_{p}, u_{1}, \ldots, u_{q}\right\}$$ for $U$ and a basis
     $$\left\{v_{1}, \ldots, v_{p}, w_{1}, \ldots, w_{r}\right\}$$ for $W$.
-    
+
     Then we just need to show that $$B=\left\{v_{1}, \ldots, v_{p}, u_{1}, \ldots, u_{q}, w_{1}, \ldots, w_{r}\right\}$$ is a basis for $U+W$\\
-    \framebreak
+    \newpage
     Suppose
     $$
         \alpha_{1} v_{1}+\cdots+\alpha_{p} v_{p}+\beta_{1} u_{1}+\cdots+\beta_{q} u_{q}+\gamma_{1} w_{1}+\cdots+\gamma_{r} w_{r}=0
     $$
     Then
     $$
-        x=\underbrace{\alpha_{1} v_{1}+\cdots+\alpha_{p} v_{p}+\beta_{1} u_{1}+\cdots+\beta_{q} u_{q}}_{\epsilon U}=-(\underbrace{\gamma_{1} w_{1}+\cdots+\gamma_{r} w_{r}}_{\in W})
+        x=\underbrace{\alpha_{1} v_{1}+\cdots+\alpha_{p} v_{p}+\beta_{1} u_{1}+\cdots+\beta_{q} u_{q}}_{\in U}=-(\underbrace{\gamma_{1} w_{1}+\cdots+\gamma_{r} w_{r}}_{\in W})
     $$
     belongs to $U \cap W$. Thus
     $$
@@ -392,12 +395,149 @@
 \begin{frame}
     \frametitle{Corollary}
     Let $V$ be a vector space and $U,W\subset V$ be finite-dimensional subspaces of $V$. Then
-        \[\dim(U+W)\leq\dim U+\dim W.\]
+    \[\dim(U+W)\leq\dim U+\dim W.\]
     The condition for ``='': the sum is direct. i.e.
-        \[\dim(U\oplus W)=\dim U+\dim W.\]
-    
+    \[\dim(U\oplus W)=\dim U+\dim W.\]
+\end{frame}
+
+\section{Inner Product Spaces}
+\begin{frame}
+    \frametitle{Overview}
+    \begin{enumerate}
+        \item Inner Product Spaces
+        \item Induced Norm
+        \item Orthogonality \& Orthonormal System
+        \item The Projection Theorem
+        \item Gram-Schmidt Orthonormalization
+    \end{enumerate}
 
 \end{frame}
 
+\subsection{Inner Product Space}
+\begin{frame}[allowframebreaks]
+    \frametitle{Inner Product Space}
+    Let $V$ be a real or complex vector space. Then a map $\langle\,\cdot\,,\,\cdot\,\rangle: V\times V\rightarrow\F$ is called a scalar product or inner product if for all $u,v,w\in V$ and all $\lambda\in\F$
+    \begin{enumerate}
+        \item \textit{Positive-definite}\\ $\scp{v}{v}\geq0$ and $\scp{v}{v}=0$ if and only if $v=0$,
+        \item \textit{Linearity in the 2nd argument}\\ $\scp{u}{v+w}=\scp{u}{v}+\scp{u}{w}$
+        \item \textit{Linearity in the 2nd argument}\\ $\scp{u}{\lambda v}=\lambda\scp{u}{v}$
+        \item \textit{Conjugate symmetry}\\ $\scp{u}{v}=\overline{\scp{v}{u}}$
+    \end{enumerate}
+    The pair $(V,\scpp)$ is called an \emph{inner product space}.
+    \newpage
+    Prove that
+    \begin{enumerate}
+        \item \[\scp{\lambda u}{v}=\overline{\lambda}\scp{u}{v}.\]
+        \item \[\scp{u+v}{w}=\scp{u}{w}+\scp{v}{w}\]
+    \end{enumerate}
+    This is called the \emph{conjugate linearity} in the 1st argument.
+    \nullspace
+    What if $\F=\R$?
+
+    Ans: Conjugate symmetry reduces to symmetry, and conjugate linearity reduces to linearity. So, an inner product on a real vector space is a positive-definite symmetric \emph{bilinear map}.
+    \nullspace
+    \remark  Multi-linear map will be discussed in detail in \textsl{Differential Calculus - Second Derivative}.
+\end{frame}
+
+\subsection{Induced Norm}
+\begin{frame}
+    \frametitle{Induced Norm}
+    Let $(V,\scpp)$ be an inner product space. The map
+    \[\|\cdot\|:V\rightarrow\R,\qquad\qquad\|v\|=\sqrt{\scp{v}{v}}\]
+    is called the \emph{induced norm} on $V$.
+    \nullspace
+    (How to prove that an induced norm is actually a norm?)
+    \nullspace
+    By \textit{the Cauchy-Schwarz inequality}, we define the \emph{angle} $\alpha(u,v)\in[0,\pi]$ \emph{between u and v} by
+    \begin{equation}
+        \cos\alpha(u,v)=\frac{\scp{u}{v}}{\|u\|\|v\|}.
+    \end{equation}
+    We are particularly interested in the case that $\alpha=\pi/2$. i.e. $\scp{u}{v}=0$. Therefore, we introduce \emph{orthogonality}.
+\end{frame}
+
+\subsection{Orthogonality}
+\begin{frame}[allowframebreaks]
+    \frametitle{Orthogonality}
+    Let $(V,\scpp)$ be an inner product vector space.
+    \begin{enumerate}[1.]
+        \item Two vectors $u,v\in V$ are called \emph{orthogonal} or \emph{perpendicular} if $\scp{u}{v}=0$. We then write $u\perp v$.
+        \item We call
+              \begin{equation*}
+                  M^{\perp}:=\left\{v\in V:\mathop{\forall}_{m\in M}\scp{m}{v}=0\right\}
+              \end{equation*}
+              the \emph{orthogonal complement} of a set $M\subset V$.
+    \end{enumerate}
+    For short, we sometimes write $v\perp M$ instead of $v\in M^{\perp}$ or $v\perp m$ for all $m\in M$.
+    \nullspace
+    \remark The orthogonal complement $M^{\perp}$ is a subspace of $V$.\\
+    (How to prove?)
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Orthonormal Systems \& Bases}
+    Let $(V,\scpp)$ be an inner product vector space. A tuple of vectors (\myseries{v}{r})$\in V$ is called a \emph{(finite) orthonormal system} if
+    \begin{equation*}
+        \scp{v_j}{v_k}=\delta_{jk}:=\left\{\begin{aligned}&1\;\;\;\text{for }j=k,\\&0\;\;\;\text{for}~j\neq k,\end{aligned}\right.,\qquad\qquad j,k=1,\ldots,r,
+    \end{equation*}
+    i.e., if $\|v_k\|=1$ and $v_j\perp v_k$ for $j\neq k$.
+    \nullspace
+    Let $(V,\scpp)$ be a finite-dimensional inner product vector space and $\mathcal{B}=(e_1,\ldots,e_n)$ a basis of $V$. If $\mathcal{B}$ is also an orthonormal system, we say that $\mathcal{B}$ is an \emph{orthonormal basis} (ONB).\\
+    \newpage
+    \emph{Parseval’s Theorem} Let $(V,\scpp)$ be a finite-dimensional inner product vector space and $\mathcal{B}=\{e_1,\ldots,e_n\}$ an orthonormal basis of $V$. Then
+    \begin{equation*}
+        \|v\|^2=\sum_{i=1}^{n}|\scp{v}{e_i}|^2
+    \end{equation*}
+    for any $v\in V$.
+    \nullspace
+    \remark Parseval’s Theorem gives a alternative way to calculate a vector's induced norm.
+\end{frame}
+
+\subsection{Projection Theorem}
+\begin{frame}[allowframebreaks]
+    \frametitle{Projection Theorem}
+    Let $(V,\scpp)$ be a (possibly infinite-dimensional) inner product vector space and (\myseries{e}{r}), $r\in\N$, be an orthonormal system in $V$. Denote $U:=\text{span}\{e_1,\ldots,e_r\}.$\\
+    Then for every $v\in V$ there exists a unique representation
+    \begin{equation*}
+        v=u+w\multido{}{3}{\qquad}\text{where}~u\in U~\text{and}~w\in U^{\perp}
+    \end{equation*}
+    and $u=\sum\limits_{i=1}^{r}\scp{e_i}{v}e_i,\,w:=v-u.$
+    The vector
+    \begin{equation*}
+        \pi_Uv:=\sum_{i=1}^{r}\scp{e_i}{v}e_i
+    \end{equation*}
+    is called the \emph{orthogonal projection} of $v$ onto $U$.\\
+    \newpage
+    The projection theorem essentially states that \textbf{$\pi_Uv$ always exists} and is independent of the choice of the orthonormal system (it \textbf{depends only on the span $U$} of the system).
+    \nullspace
+    Moreover, it generalize the idea of projection:
+    $$
+        \pi_{e_i}v\rightarrow\pi_Uv
+    $$
+    A vector in an inner product space can be decomposed not only on its orthonormal basis but also on its subspaces.
+\end{frame}
+
+\subsection{Best Approximation}
+\begin{frame}
+    \frametitle{Orthonormal System $\sim$ Best Approximation}
+    \begin{columns}
+        \column{0.6\textwidth}
+        Why is orthonormal system extremely useful?
+        \nullspace
+        Let $V$ be a (infinite) vector space. We can approximate an element $v\in V$ using a (finite) linear combination of some orthonormal basis. This is useful in engineering problems.
+        \column{0.4\textwidth}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.7\textwidth]{2020-05-04-01-36-07.png}
+            \caption{The Fourier Series Approximation of A Square Wave}
+            \end{figure}
+    \end{columns}   
+\end{frame}
+
+\begin{frame}
+    \frametitle{Gram-Schmidt Orthonormalization}
+    Just remember how to do it.
+    \nullspace
+    How to use Gram-Schmidt Orthonormalization to obtain \textit{Legendre polynomials}?
+\end{frame}
 
 \end{document}

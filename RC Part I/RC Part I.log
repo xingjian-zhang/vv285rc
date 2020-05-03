@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.6)  2 MAY 2020 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.6)  4 MAY 2020 01:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -515,10 +515,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box53
 \@float@everytoks=\toks44
 \@floatcapt=\box54
+) (c:/texlive/2018/texmf-dist/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+ (c:/texlive/2018/texmf-dist/tex/generic/multido/multido.tex  v1.42, 2010/05/14 <tvz>
+\multido@count=\count156
+\multidocount=\count157
+\multido@stuff=\toks45
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
 ) (c:/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip57
-\multirow@cntb=\count156
+\multirow@cntb=\count158
 \multirow@dima=\skip58
 \bigstrutjot=\dimen190
 ) (c:/texlive/2018/texmf-dist/tex/latex/tools/array.sty
@@ -526,7 +534,7 @@ Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \col@sep=\dimen191
 \ar@mcellbox=\box55
 \extrarowheight=\dimen192
-\NC@list=\toks45
+\NC@list=\toks46
 \extratabsurround=\skip59
 \backup@length=\skip60
 \ar@cellbox=\box56
@@ -542,12 +550,12 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen256
 \cmidrulekern=\dimen257
 \defaultaddspace=\dimen258
-\@cmidla=\count157
-\@cmidlb=\count158
+\@cmidla=\count159
+\@cmidlb=\count160
 \@aboverulesep=\dimen259
 \@belowrulesep=\dimen260
-\@thisruleclass=\count159
-\@lastruleclass=\count160
+\@thisruleclass=\count161
+\@lastruleclass=\count162
 \@thisrulewidth=\dimen261
 ) (c:/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
@@ -555,56 +563,56 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
  (c:/texlive/2018/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count161
+\lrq@indent=\count163
  (c:/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (c:/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty (c:/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write5
-\integerpart=\count162
-\decimalpart=\count163
+\integerpart=\count164
+\decimalpart=\count165
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count164
-\c@listtotal=\count165
-\c@listcount=\count166
-\c@liststart=\count167
-\c@liststop=\count168
-\c@citecount=\count169
-\c@citetotal=\count170
-\c@multicitecount=\count171
-\c@multicitetotal=\count172
-\c@instcount=\count173
-\c@maxnames=\count174
-\c@minnames=\count175
-\c@maxitems=\count176
-\c@minitems=\count177
-\c@citecounter=\count178
-\c@savedcitecounter=\count179
-\c@uniquelist=\count180
-\c@uniquename=\count181
-\c@refsection=\count182
-\c@refsegment=\count183
-\c@maxextratitle=\count184
-\c@maxextratitleyear=\count185
-\c@maxextradate=\count186
-\c@maxextraalpha=\count187
-\c@abbrvpenalty=\count188
-\c@highnamepenalty=\count189
-\c@lownamepenalty=\count190
-\c@maxparens=\count191
-\c@parenlevel=\count192
-\blx@tempcnta=\count193
-\blx@tempcntb=\count194
-\blx@tempcntc=\count195
-\blx@maxsection=\count196
-\blx@maxsegment@0=\count197
-\blx@notetype=\count198
-\blx@parenlevel@text=\count199
-\blx@parenlevel@foot=\count266
-\blx@sectionciteorder@0=\count267
+\c@tabx@nest=\count166
+\c@listtotal=\count167
+\c@listcount=\count168
+\c@liststart=\count169
+\c@liststop=\count170
+\c@citecount=\count171
+\c@citetotal=\count172
+\c@multicitecount=\count173
+\c@multicitetotal=\count174
+\c@instcount=\count175
+\c@maxnames=\count176
+\c@minnames=\count177
+\c@maxitems=\count178
+\c@minitems=\count179
+\c@citecounter=\count180
+\c@savedcitecounter=\count181
+\c@uniquelist=\count182
+\c@uniquename=\count183
+\c@refsection=\count184
+\c@refsegment=\count185
+\c@maxextratitle=\count186
+\c@maxextratitleyear=\count187
+\c@maxextradate=\count188
+\c@maxextraalpha=\count189
+\c@abbrvpenalty=\count190
+\c@highnamepenalty=\count191
+\c@lownamepenalty=\count192
+\c@maxparens=\count193
+\c@parenlevel=\count194
+\blx@tempcnta=\count195
+\blx@tempcntb=\count196
+\blx@tempcntc=\count197
+\blx@maxsection=\count198
+\blx@maxsegment@0=\count199
+\blx@notetype=\count266
+\blx@parenlevel@text=\count267
+\blx@parenlevel@foot=\count268
+\blx@sectionciteorder@0=\count269
 \labelnumberwidth=\skip61
 \labelalphawidth=\skip62
 \biblabelsep=\skip63
@@ -615,9 +623,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip68
 \blx@bcfin=\read2
 \blx@bcfout=\write6
-\c@mincomprange=\count268
-\c@maxcomprange=\count269
-\c@mincompwidth=\count270
+\c@mincomprange=\count270
+\c@maxcomprange=\count271
+\c@mincompwidth=\count272
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (c:/texlive/2018/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -627,74 +635,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'mla.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count271
-\c@savedafterword=\count272
-\c@annotator=\count273
-\c@savedannotator=\count274
-\c@author=\count275
-\c@savedauthor=\count276
-\c@bookauthor=\count277
-\c@savedbookauthor=\count278
-\c@commentator=\count279
-\c@savedcommentator=\count280
-\c@editor=\count281
-\c@savededitor=\count282
-\c@editora=\count283
-\c@savededitora=\count284
-\c@editorb=\count285
-\c@savededitorb=\count286
-\c@editorc=\count287
-\c@savededitorc=\count288
-\c@foreword=\count289
-\c@savedforeword=\count290
-\c@holder=\count291
-\c@savedholder=\count292
-\c@introduction=\count293
-\c@savedintroduction=\count294
-\c@namea=\count295
-\c@savednamea=\count296
-\c@nameb=\count297
-\c@savednameb=\count298
-\c@namec=\count299
-\c@savednamec=\count300
-\c@translator=\count301
-\c@savedtranslator=\count302
-\c@shortauthor=\count303
-\c@savedshortauthor=\count304
-\c@shorteditor=\count305
-\c@savedshorteditor=\count306
-\c@labelname=\count307
-\c@savedlabelname=\count308
-\c@institution=\count309
-\c@savedinstitution=\count310
-\c@lista=\count311
-\c@savedlista=\count312
-\c@listb=\count313
-\c@savedlistb=\count314
-\c@listc=\count315
-\c@savedlistc=\count316
-\c@listd=\count317
-\c@savedlistd=\count318
-\c@liste=\count319
-\c@savedliste=\count320
-\c@listf=\count321
-\c@savedlistf=\count322
-\c@location=\count323
-\c@savedlocation=\count324
-\c@organization=\count325
-\c@savedorganization=\count326
-\c@origlocation=\count327
-\c@savedoriglocation=\count328
-\c@origpublisher=\count329
-\c@savedorigpublisher=\count330
-\c@publisher=\count331
-\c@savedpublisher=\count332
-\c@language=\count333
-\c@savedlanguage=\count334
-\c@origlanguage=\count335
-\c@savedoriglanguage=\count336
-\c@pageref=\count337
-\c@savedpageref=\count338
+\c@afterword=\count273
+\c@savedafterword=\count274
+\c@annotator=\count275
+\c@savedannotator=\count276
+\c@author=\count277
+\c@savedauthor=\count278
+\c@bookauthor=\count279
+\c@savedbookauthor=\count280
+\c@commentator=\count281
+\c@savedcommentator=\count282
+\c@editor=\count283
+\c@savededitor=\count284
+\c@editora=\count285
+\c@savededitora=\count286
+\c@editorb=\count287
+\c@savededitorb=\count288
+\c@editorc=\count289
+\c@savededitorc=\count290
+\c@foreword=\count291
+\c@savedforeword=\count292
+\c@holder=\count293
+\c@savedholder=\count294
+\c@introduction=\count295
+\c@savedintroduction=\count296
+\c@namea=\count297
+\c@savednamea=\count298
+\c@nameb=\count299
+\c@savednameb=\count300
+\c@namec=\count301
+\c@savednamec=\count302
+\c@translator=\count303
+\c@savedtranslator=\count304
+\c@shortauthor=\count305
+\c@savedshortauthor=\count306
+\c@shorteditor=\count307
+\c@savedshorteditor=\count308
+\c@labelname=\count309
+\c@savedlabelname=\count310
+\c@institution=\count311
+\c@savedinstitution=\count312
+\c@lista=\count313
+\c@savedlista=\count314
+\c@listb=\count315
+\c@savedlistb=\count316
+\c@listc=\count317
+\c@savedlistc=\count318
+\c@listd=\count319
+\c@savedlistd=\count320
+\c@liste=\count321
+\c@savedliste=\count322
+\c@listf=\count323
+\c@savedlistf=\count324
+\c@location=\count325
+\c@savedlocation=\count326
+\c@organization=\count327
+\c@savedorganization=\count328
+\c@origlocation=\count329
+\c@savedoriglocation=\count330
+\c@origpublisher=\count331
+\c@savedorigpublisher=\count332
+\c@publisher=\count333
+\c@savedpublisher=\count334
+\c@language=\count335
+\c@savedlanguage=\count336
+\c@origlanguage=\count337
+\c@savedoriglanguage=\count338
+\c@pageref=\count339
+\c@savedpageref=\count340
 \shorthandwidth=\skip69
 \shortjournalwidth=\skip70
 \shortserieswidth=\skip71
@@ -718,13 +726,13 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (c:/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count339
-\c@textcitetotal=\count340
-\c@textcitemaxnames=\count341
-\c@biburlnumpenalty=\count342
-\c@biburlucpenalty=\count343
-\c@biburllcpenalty=\count344
-\c@smartand=\count345
+\c@textcitecount=\count341
+\c@textcitetotal=\count342
+\c@textcitemaxnames=\count343
+\c@biburlnumpenalty=\count344
+\c@biburlucpenalty=\count345
+\c@biburllcpenalty=\count346
+\c@smartand=\count347
 )
 Package biblatex Info: Trying to load bibliography style 'mla'...
 Package biblatex Info: ... file 'mla.bbx' found.
@@ -734,8 +742,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (c:/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count346
-\c@bbx:relatedtotal=\count347
+\c@bbx:relatedcount=\count348
+\c@bbx:relatedtotal=\count349
 ))
 Package biblatex Info: Trying to load citation style 'mla'...
 Package biblatex Info: ... file 'mla.cbx' found.
@@ -760,10 +768,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip85
 \subfigcapmargin=\dimen263
 \subfiglabelskip=\skip86
-\c@subfigure=\count348
-\c@lofdepth=\count349
-\c@subtable=\count350
-\c@lotdepth=\count351
+\c@subfigure=\count350
+\c@lofdepth=\count351
+\c@subtable=\count352
+\c@lotdepth=\count353
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -782,10 +790,10 @@ Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
 \TP@absmargin=\dimen267
 Grid set 16 x 16 = 22.7622pt x 17.07166pt
 \TPboxrulesize=\dimen268
-\TP@tbargs=\toks46
+\TP@tbargs=\toks47
 \TP@prevdepth=\dimen269
 ) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamerthemeMadrid.sty (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamercolorthemestructure.sty)
-Package hyperref Info: Option `colorlinks' set `true' on input line 45.
+Package hyperref Info: Option `colorlinks' set `true' on input line 48.
 Package biblatex Info: Trying to load language 'english' -> 'english-mla'...
 Package biblatex Info: ... file 'english-mla.lbx' found.
  (c:/texlive/2018/texmf-dist/tex/latex/biblatex-mla/english-mla.lbx
@@ -800,25 +808,25 @@ Package biblatex Info: ... file 'english.lbx' found.
  (c:/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 ))
-\@quotelevel=\count352
-\@quotereset=\count353
+\@quotelevel=\count354
+\@quotereset=\count355
  (./RC Part I.aux)
 \openout1 = `"RC Part I.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -856,17 +864,17 @@ LaTeX Font Info:    ... okay on input line 52.
 
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
+\scratchcounter=\count356
 \scratchdimen=\dimen270
 \scratchbox=\box58
-\nofMPsegments=\count355
-\nofMParguments=\count356
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count357
+\nofMPsegments=\count357
+\nofMParguments=\count358
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count359
 \MPscratchDim=\dimen271
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
-\everyMPtoPDFconversion=\toks48
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
+\everyMPtoPDFconversion=\toks49
 ) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -880,70 +888,70 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 52.
+Package hyperref Info: Link coloring ON on input line 55.
  (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count360
+\c@section@level=\count362
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
  (./RC Part I.out) (./RC Part I.out)
 \@outlinefile=\write7
 \openout7 = `"RC Part I.out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 52.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 55.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 52.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 52.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 55.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 52.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 52.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 55.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 52.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 52.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 52.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 55.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 52.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 52.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 52.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 52.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 52.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 52.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 52.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 52.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 55.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 52.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 55.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 52.
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 55.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 52.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 55.
  (c:/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (c:/texlive/2018/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -966,171 +974,171 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"RC Part I".bbl' not found.
 
 No file "RC Part I".bbl.
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
+Package biblatex Info: Reference section=0 on input line 55.
+Package biblatex Info: Reference segment=0 on input line 55.
 (./RC Part I.nav)
-<logo2.png, id=64, 225.9642pt x 170.5572pt>
+<logo2.png, id=88, 225.9642pt x 170.5572pt>
 File: logo2.png Graphic file (type png)
 <use logo2.png>
-Package pdftex.def Info: logo2.png  used on input line 59.
+Package pdftex.def Info: logo2.png  used on input line 62.
 (pdftex.def)             Requested size: 75.39246pt x 56.9055pt.
  [1
 
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo2.png>]
-<logo.png, id=79, 469.755pt x 87.4467pt>
+<logo.png, id=103, 469.755pt x 87.4467pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 73.
+Package pdftex.def Info: logo.png  used on input line 76.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [2
 
  <./logo.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 87.
+Package pdftex.def Info: logo.png  used on input line 90.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 109.
+LaTeX Font Info:    Try loading font information for U+msa on input line 112.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 109.
+LaTeX Font Info:    Try loading font information for U+msb on input line 112.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 109.
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 112.
  (c:/texlive/2018/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 109.
+Package pdftex.def Info: logo.png  used on input line 112.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [4
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 128.
+Package pdftex.def Info: logo.png  used on input line 131.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [5
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 175.
+Package pdftex.def Info: logo.png  used on input line 178.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [6
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 192.
+Package pdftex.def Info: logo.png  used on input line 195.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [7
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 199.
+Package pdftex.def Info: logo.png  used on input line 202.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [8
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 214.
+Package pdftex.def Info: logo.png  used on input line 217.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [9
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 228.
+Package pdftex.def Info: logo.png  used on input line 231.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [10
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 237.
+Package pdftex.def Info: logo.png  used on input line 240.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [11
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 251.
+Package pdftex.def Info: logo.png  used on input line 254.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [12
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 259.
+Package pdftex.def Info: logo.png  used on input line 262.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [13
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 277.
+Package pdftex.def Info: logo.png  used on input line 280.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [14
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 289.
+Package pdftex.def Info: logo.png  used on input line 292.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [15
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 304.
+Package pdftex.def Info: logo.png  used on input line 307.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [16
 
 ]
-<chart1.png, id=191, 1565.85pt x 610.28pt>
+<chart1.png, id=215, 1565.85pt x 610.28pt>
 File: chart1.png Graphic file (type png)
 <use chart1.png>
-Package pdftex.def Info: chart1.png  used on input line 315.
+Package pdftex.def Info: chart1.png  used on input line 318.
 (pdftex.def)             Requested size: 342.2953pt x 133.40529pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 315.
+Package pdftex.def Info: logo.png  used on input line 318.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [17
 
  <./chart1.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 329.
+Package pdftex.def Info: logo.png  used on input line 332.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [18
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 345.
+Package pdftex.def Info: logo.png  used on input line 348.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [19
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 390.
+Package pdftex.def Info: logo.png  used on input line 393.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [20
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 390.
+Package pdftex.def Info: logo.png  used on input line 393.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [21
 
@@ -1138,7 +1146,7 @@ Package pdftex.def Info: logo.png  used on input line 390.
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 390.
+Package pdftex.def Info: logo.png  used on input line 393.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [22
 
@@ -1146,9 +1154,98 @@ Package pdftex.def Info: logo.png  used on input line 390.
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 400.
+Package pdftex.def Info: logo.png  used on input line 401.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [23
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 414.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [24
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 440.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [25
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 440.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [26
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 456.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [27
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 474.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [28
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 493.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [29
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 493.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [30
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 517.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [31
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 517.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [32
+
+
+]
+<2020-05-04-01-36-07.png, id=318, 301.125pt x 534.49687pt>
+File: 2020-05-04-01-36-07.png Graphic file (type png)
+<use 2020-05-04-01-36-07.png>
+Package pdftex.def Info: 2020-05-04-01-36-07.png  used on input line 534.
+(pdftex.def)             Requested size: 95.84079pt x 170.12088pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 534.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \vbox (4.0503pt too high) detected at line 534
+ []
+
+[33
+
+ <./2020-05-04-01-36-07.png>]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 543.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [34
 
 ]
 \tf@nav=\write8
@@ -1160,30 +1257,30 @@ Package pdftex.def Info: logo.png  used on input line 400.
 \tf@snm=\write10
 \openout10 = `"RC Part I.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 545.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 545.
  (./RC Part I.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 545.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 545.
 Package rerunfilecheck Info: File `"RC Part I".out' has not changed.
-(rerunfilecheck)             Checksum: 5880148279A9B6E0070EFCF935F149B6;758.
+(rerunfilecheck)             Checksum: D62380399F8EB6B88038B1718DEED1B2;1149.
 Package logreq Info: Writing requests to '"RC Part I".run.xml'.
 \openout1 = `"RC Part I.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24083 strings out of 492649
- 455944 string characters out of 6133385
- 894547 words of memory out of 5000000
- 27424 multiletter control sequences out of 15000+600000
+ 24217 strings out of 492649
+ 457721 string characters out of 6133385
+ 895725 words of memory out of 5000000
+ 27522 multiletter control sequences out of 15000+600000
  15144 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,55p,815b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "RC Part I.pdf" (23 pages, 271034 bytes).
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "RC Part I.pdf" (34 pages, 305558 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 164 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
