@@ -242,7 +242,7 @@
 
     A finite set $M\subset V$ is called an \emph{independent set} if the elements of $M$ are independent.
     \nullspace
-    \remark The definition of linear independence is important. The definition of linear dependence and the ability to determine whether a subset of vectors in a vector space is linearly dependent are central to determining a basis for a vector space.
+    \remark The definition of linear dependence and the ability to determine whether a subset of vectors in a vector space is linearly dependent are key to determining a basis for a vector space.
 \end{frame}
 
 \subsection{Span}
@@ -297,6 +297,16 @@
     \textbf{Remark:} This theorem is more practical than the definition of basis when proving some set is a basis of some vector space. It helps one decompose the proof into two parts: 1. prove linear independence (uniqueness of \eqref{basis}) 2. prove the span is large enough (existence of \eqref{basis}).
 \end{frame}
 
+\begin{frame}
+    \frametitle{Exercise}
+    Prove or give a counterexample: If $v_1,v_2,v_3,v_4$ is a basis of $V$ and $U$ is a subspace of $V$ such that $v_1,v_2\in U$ and $v_3,v_4\notin U$, then $v_1,v_2$ is a basis of $U$.
+    % \pause
+    % \nullspace
+    % Counterexample: $U=\text{span}\{v_1,v_2,v_3+v_4\}$.
+    
+
+\end{frame}
+
 \subsection{Dimension}
 \begin{frame}
     \frametitle{Dimension}
@@ -335,6 +345,19 @@
         \item an independent set $A$ may have at most $n$ elements.
     \end{enumerate}
     (How to prove?)
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Suppose $p_{0}, p_{1}, \ldots, p_{m}$ are polynomials in $\mathcal{P}_{m}(\F)$ such that $p_{k}(2)=0$ for each $k.$ Prove that $p_{0}, p_{1}, \ldots, p_{m}$ is not linearly independent in $\mathcal{P}_{m}(\F)$
+    
+    % \pause
+    % \nullspace
+    % We express $p_k(x)$ in the form of $p_k(x)=(x-2)q_k(x)$. 
+    % Immediately, we notice that the degree of $q_k$ is one less than the degree of $p_k$. 
+    % Therefore, $q_{0}, q_{1}, \ldots, q_{m}$ are polynomials in $\mathcal{P}_{m-1}(\F)$, which has a dimension of $m$. 
+    % By Corollary 2 we conclude that $q_{0}, q_{1}, \ldots, q_{m}$ are linearly dependent. Correspondingly, $p_{0}, p_{1}, \ldots, p_{m}$ are linearly dependent. 
+
 \end{frame}
 
 \begin{frame}[allowframebreaks]
@@ -439,6 +462,15 @@
     \[\dim(U+W)\leq\dim U+\dim W.\]
     The condition for ``='': the sum is direct. i.e.
     \[\dim(U\oplus W)=\dim U+\dim W.\]
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Suppose that $U=\{(x,x,y,y)\in\F^4:x,y\in\F\}$ and $W=\{(x,x,x,y)\in\F^4:x,y\in\F\}$. Then, what is $U+W$? What is $U\cap W$? 
+    % \pause
+    % \nullspace
+    % $$U+W=\{(x,x,y,z)\in\F^4:x,y,z\in\F\}$$
+    % $$U\cap W=\{(x,x,x,x)\in\F^4:x\in\F\}$$
 \end{frame}
 
 \section{Inner Product Spaces}
@@ -585,6 +617,18 @@
     \end{align*}
     \nullspace
     How to use Gram-Schmidt Orthonormalization to obtain \textit{Legendre polynomials}?
+\end{frame}
+
+\begin{frame}
+    \frametitle{Discussion}
+    \vspace{1.5cm}
+    \Large
+    \centering
+    Learn Well\\
+    And\\
+    Have Fun!\\
+    
+
 \end{frame}
 
 \end{document}
