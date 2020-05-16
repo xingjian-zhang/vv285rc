@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[12pt, t]{beamer}
 
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -11,9 +11,13 @@
 \usepackage{booktabs}
 \usepackage{indentfirst} 
 \usepackage[style=mla]{biblatex}
-\usepackage{subfigure}
+\usepackage{subcaption}
 \usepackage{hyperref}
 \usepackage{textpos}
+
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
 
 \definecolor{Turquoise3}{RGB}{0, 134, 139}
 \renewcommand{\emph}[1]{{\color{Turquoise3}\textsl{#1}}}
@@ -237,6 +241,8 @@
     \[\sum_{k=1}^{n}\lambda_kv_k=0\qquad\Rightarrow\qquad\lambda_1=\lambda_2=\cdots=\lambda_n=0.\]
 
     A finite set $M\subset V$ is called an \emph{independent set} if the elements of $M$ are independent.
+    \nullspace
+    \remark The definition of linear independence is important. The definition of linear dependence and the ability to determine whether a subset of vectors in a vector space is linearly dependent are central to determining a basis for a vector space.
 \end{frame}
 
 \subsection{Span}
@@ -246,10 +252,10 @@
     \begin{equation*}
         \sum_{k=1}^{n}\lambda_kv_k=\lambda_1v_1+\cdots+\lambda_nv_n
     \end{equation*}
-    is called a \emph{linear combination} of the vectors \myseries{v}{n}.\\
-    The set
+    is called a \emph{linear combination} of the vectors \myseries{v}{n}. The set
     \[\text{span}\{v_1,\ldots,v_n\}=\left\{y\in V:y=\sum_{k=1}^{n}\lambda_kv_k,\lambda_1,\ldots,\lambda_n\in\F\right\}\]
-    is called the \emph{(linear) span} or the \emph{linear hull} of the vectors \myseries{v}{n}.
+    is called the \emph{(linear) span} or the \emph{linear hull} of the vectors \myseries{v}{n}.\nullspace
+    \textbf{Question: } Does the exponential function $\exp (x)=\sum_{n=0}^{\infty} \frac{x^{n}}{n !}$ belong to the set span $M$ where $M=\left\{f \in C(\mathbb{R}): f(x)=x^{n}, x \in \mathbb{N}\right\} ?$
 
 \end{frame}
 
@@ -331,7 +337,7 @@
     (How to prove?)
 \end{frame}
 
-\begin{frame}
+\begin{frame}[allowframebreaks]
     \frametitle{Sum of Vector Space}
     Let $V$ be a real or complex vector space and $U,W$ be sets in $V$.
     \begin{enumerate}[(i)]
@@ -339,12 +345,47 @@
               \[U+W:=\left\{v\in V:\mathop{\exists}_{u\in U}\mathop{\exists}_{w\in W}: v=u+w\right\}.\]
         \item If $U$ and $W$ are subspaces of $V$ with $U\cap W=\{0\}$, the sum $U+W$ is called \emph{direct}, and we denote it by $U\oplus W$.
     \end{enumerate}
+
+    It is easy to see that if $U$,$W$ are subspaces of $V$, then $U + W$ and $U\cap W$ are subspaces of $V$. (How to prove?)
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{2020-05-16-10-31-38.png}
+    \end{figure}
+
+    \newpage
+    What is the difference between $U+W$ and $U\cup W$?
+    \begin{figure}[ht]
+        \begin{subfigure}[b]{0.2\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{u+w_gr1.eps}
+            \caption{$U$}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.2\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{u+w_gr2.eps}
+            \caption{$V$}
+
+        \end{subfigure}
+        \begin{subfigure}[b]{0.2\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{u+w_gr3.eps}
+            \caption{$U\cup V$}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.2\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{u+w_gr4.eps}
+            \caption{$U+V$}
+        \end{subfigure}
+    \end{figure}
+
+    \newpage
     Two properties about sum of vector space:\\
     \begin{enumerate}
         \item The sum $U+W$ of vector spaces $U,W$ is direct if and only if all $x\in U+W$, $x\neq0$, have a \textbf{unique} representation $x=u+w,~u\in U,w\in W$.
         \item Let $V$ be a vector space and $U,W\subset V$ be finite-dimensional subspaces of $V$. Then
               \[\dim(U+W)+\dim(U\cap W)=\dim U+\dim W.\]
     \end{enumerate}
+
 \end{frame}
 
 \begin{frame}[allowframebreaks]
@@ -433,7 +474,9 @@
     This is called the \emph{conjugate linearity} in the 1st argument.
     \nullspace
     What if $\F=\R$?
-
+    \newpage
+    What if $\F=\R$?
+    \nullspace
     Ans: Conjugate symmetry reduces to symmetry, and conjugate linearity reduces to linearity. So, an inner product on a real vector space is a positive-definite symmetric \emph{bilinear map}.
     \nullspace
     \remark  Multi-linear map will be discussed in detail in \textsl{Differential Calculus - Second Derivative}.
@@ -513,7 +556,7 @@
     $$
         \pi_{e_i}v\rightarrow\pi_Uv
     $$
-    A vector in an inner product space can be decomposed not only on its orthonormal basis but also on its subspaces.
+    A vector in an inner product space can be decomposed not only on its \emph{orthonormal basis} but also on its \emph{subspaces}.
 \end{frame}
 
 \subsection{Best Approximation}
@@ -527,15 +570,19 @@
         \column{0.4\textwidth}
         \begin{figure}[H]
             \centering
-            \includegraphics[width=0.7\textwidth]{2020-05-04-01-36-07.png}
-            \caption{The Fourier Series Approximation of A Square Wave}
-            \end{figure}
-    \end{columns}   
+            \includegraphics[width=0.6\textwidth]{2020-05-04-01-36-07.png}
+            \caption{\small The Fourier Series Approximation of A Square Wave}
+        \end{figure}
+    \end{columns}
 \end{frame}
 
 \begin{frame}
     \frametitle{Gram-Schmidt Orthonormalization}
     Just remember how to do it.
+    \begin{align*}
+         & w_{1}:=\dfrac{v_{1}}{\left\|v_{1}\right\|}                                                                                                                                                 \\
+         & w_{k}:=\dfrac{v_{k}-\sum_{j=1}^{k-1}\left\langle w_{j}, v_{k}\right\rangle w_{j}}{\left\|v_{k}-\sum_{j=1}^{k-1}\left\langle w_{j}, v_{k}\right\rangle w_{j}\right\|}, \quad k=2, \ldots, n
+    \end{align*}
     \nullspace
     How to use Gram-Schmidt Orthonormalization to obtain \textit{Legendre polynomials}?
 \end{frame}
