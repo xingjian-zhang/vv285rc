@@ -66,6 +66,19 @@
 \end{frame}
 
 \begin{frame}
+    \frametitle{Something you need to pay attention to...}
+    Think More and Be Interactive!
+    \begin{itemize}
+        \item Do think more about the question in ``()''. \\e.g. ``(How to prove?)''
+        \item You are welcome to ask questions in a adequate manner.
+        \item Please open your camera so that I can receive more feedbacks from you. (Makes our life easier!) 
+        \item The class is designed to be interactive. However, if you really do not want to be asked at all, please type an ``\_'' before your zoom name.
+    \end{itemize}
+    
+
+\end{frame}
+
+\begin{frame}
     \
     \frametitle{Overview of Linear Algebra}
     \begin{enumerate}
@@ -81,7 +94,7 @@
 
 \section{Systems of Linear Equations}
 \begin{frame}
-    \frametitle{Overview}
+    \frametitle{Overview - Systems of Linear Equations}
     \begin{enumerate}
         \item Linear System
               \\ Homogeneous vs. Inhomogeneous
@@ -198,7 +211,43 @@
     \href{https://en.wikipedia.org/wiki/Gaussian_elimination\#Applications}{The application of Gau\ss-Jordan Algorithm}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Exercise}
+    \begin{align*}
+        x_1-2x_2+3x_3+4x_4 & =2, \\
+        x_1-2x_2+5x_3+5x_4 & =3, \\
+        -x_1+2x_2-x_3-4x_4 & =2.
+    \end{align*}
+    In our array notation, this is
+    \begin{equation*}
+        \begin{array}{cccc|c}
+            1  & -2 & 3  & 4  & 2 \\
+            1  & -2 & 5  & 5  & 3 \\
+            -1 & 2  & -1 & -4 & 2
+        \end{array}
+    \end{equation*}
+    Try to solve this.
+\end{frame}
+
 \subsection{Existence and Uniqueness of Solutions}
+\begin{frame}
+    \frametitle{Solutions of Linear System}
+    An inhomogeneous system of equations may have either
+    \begin{itemize}
+        \item a unique solution or
+        \item no solution or
+        \item an infinite number of solutions.
+    \end{itemize}
+    A homogeneous system evidently always has the \emph{trivial solution} \[x_1=x_2=\cdots=x_n=0.\]
+    It further either has
+    \begin{itemize}
+        \item no non-trivial solution or
+        \item an infinite number of non-trivial solutions.
+    \end{itemize}
+
+
+\end{frame}
+
 \begin{frame}
     \frametitle{Diagonalization}
     A system of $m$ equations with $n$ unknowns will have a unique solution if and only if it is \emph{diagonalizable}. i.e. It can be transformed into diagonal form.\\[15pt]
@@ -223,7 +272,7 @@
 \section{Finite-Dimensional Vector Spaces}
 
 \begin{frame}
-    \frametitle{Overview}
+    \frametitle{Overview - Finite-Dimensional Vector Spaces}
     \begin{enumerate}
         \item Linear Independence
         \item Span
@@ -261,8 +310,7 @@
 
 \begin{frame}
     \frametitle{Independence $\sim$ Span}
-    The vectors \myseries{v}{n}$\in V$ are independent if and only if
-    \textbf{none of them is contained in the span of all the others}.
+    The vectors \myseries{v}{n}$\in V$ are independent if and only if none of them is contained in the span of all the others.
     \\[15pt]
     (How to prove?)
 \end{frame}
@@ -300,10 +348,10 @@
 \begin{frame}
     \frametitle{Exercise}
     Prove or give a counterexample: If $v_1,v_2,v_3,v_4$ is a basis of $V$ and $U$ is a subspace of $V$ such that $v_1,v_2\in U$ and $v_3,v_4\notin U$, then $v_1,v_2$ is a basis of $U$.
-    % \pause
-    % \nullspace
-    % Counterexample: $U=\text{span}\{v_1,v_2,v_3+v_4\}$.
-    
+    \pause
+    \nullspace
+    Counterexample: $U=\text{span}\{v_1,v_2,v_3+v_4\}$.
+
 
 \end{frame}
 
@@ -350,13 +398,13 @@
 \begin{frame}
     \frametitle{Exercise}
     Suppose $p_{0}, p_{1}, \ldots, p_{m}$ are polynomials in $\mathcal{P}_{m}(\F)$ such that $p_{k}(2)=0$ for each $k.$ Prove that $p_{0}, p_{1}, \ldots, p_{m}$ is not linearly independent in $\mathcal{P}_{m}(\F)$
-    
-    % \pause
-    % \nullspace
-    % We express $p_k(x)$ in the form of $p_k(x)=(x-2)q_k(x)$. 
-    % Immediately, we notice that the degree of $q_k$ is one less than the degree of $p_k$. 
-    % Therefore, $q_{0}, q_{1}, \ldots, q_{m}$ are polynomials in $\mathcal{P}_{m-1}(\F)$, which has a dimension of $m$. 
-    % By Corollary 2 we conclude that $q_{0}, q_{1}, \ldots, q_{m}$ are linearly dependent. Correspondingly, $p_{0}, p_{1}, \ldots, p_{m}$ are linearly dependent. 
+
+    \pause
+    \nullspace
+    We express $p_k(x)$ in the form of $p_k(x)=(x-2)q_k(x)$. 
+    Immediately, we notice that the degree of $q_k$ is one less than the degree of $p_k$. 
+    Therefore, $q_{0}, q_{1}, \ldots, q_{m}$ are polynomials in $\mathcal{P}_{m-1}(\F)$, which has a dimension of $m$. 
+    By Corollary 2 we conclude that $q_{0}, q_{1}, \ldots, q_{m}$ are linearly dependent. Correspondingly, $p_{0}, p_{1}, \ldots, p_{m}$ are linearly dependent. 
 
 \end{frame}
 
@@ -466,16 +514,16 @@
 
 \begin{frame}
     \frametitle{Exercise}
-    Suppose that $U=\{(x,x,y,y)\in\F^4:x,y\in\F\}$ and $W=\{(x,x,x,y)\in\F^4:x,y\in\F\}$. Then, what is $U+W$? What is $U\cap W$? 
-    % \pause
-    % \nullspace
-    % $$U+W=\{(x,x,y,z)\in\F^4:x,y,z\in\F\}$$
-    % $$U\cap W=\{(x,x,x,x)\in\F^4:x\in\F\}$$
+    Suppose that $U=\{(x,x,y,y)\in\F^4:x,y\in\F\}$ and $W=\{(x,x,x,y)\in\F^4:x,y\in\F\}$. Then, what is $U+W$? What is $U\cap W$?
+    \pause
+    \nullspace
+    $$U+W=\{(x,x,y,z)\in\F^4:x,y,z\in\F\}$$
+    $$U\cap W=\{(x,x,x,x)\in\F^4:x\in\F\}$$
 \end{frame}
 
 \section{Inner Product Spaces}
 \begin{frame}
-    \frametitle{Overview}
+    \frametitle{Overview - Inner Product Spaces}
     \begin{enumerate}
         \item Inner Product Spaces
         \item Induced Norm
@@ -512,17 +560,47 @@
     Ans: Conjugate symmetry reduces to symmetry, and conjugate linearity reduces to linearity. So, an inner product on a real vector space is a positive-definite symmetric \emph{bilinear map}.
     \nullspace
     \remark  Multi-linear map will be discussed in detail in \textsl{Differential Calculus - Second Derivative}.
+
+    \newpage
+    Why is inner product space important?
+    \nullspace
+    \begin{itemize}
+        \item allow the rigorous introduction of intuitive geometrical notions such as the length of a vector or the angle between two vectors
+        \item provide the means of defining orthogonality between vectors (zero inner product)
+        \item generalize Euclidean spaces (in which the inner product is the dot product, also known as the scalar product) to vector spaces of any (possibly infinite) dimension, and are studied in functional analysis.
+        \item  naturally induces an associated \emph{norm}, thus an inner product space is also a \emph{normed vector space}.
+    \end{itemize}
 \end{frame}
 
 \subsection{Induced Norm}
-\begin{frame}
+\begin{frame}[allowframebreaks]
     \frametitle{Induced Norm}
     Let $(V,\scpp)$ be an inner product space. The map
     \[\|\cdot\|:V\rightarrow\R,\qquad\qquad\|v\|=\sqrt{\scp{v}{v}}\]
     is called the \emph{induced norm} on $V$.
     \nullspace
     (How to prove that an induced norm is actually a norm?)
-    \nullspace
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{2020-05-20-13-53-34.png}
+    \end{figure}
+    
+    \newpage
+    \begin{itemize}
+        \item In $\C^n$ we can define the inner product
+            \begin{equation*}
+              \scp{x}{y}:=\sum_{i=1}^{n}\overline{x_i}y_i\qquad\qquad
+              \qquad x,y\in\C^n.
+            \end{equation*}
+            \vspace*{-4mm}
+        \item In $C([a,b])$, the space of complex-valued, continuous functions on the interval $[a,b]$, we can define an inner product by
+            \[\scp{f}{g}:=\int_{a}^{b}\overline{f(x)}g(x)dx,\qquad\qquad
+            f,g\in C([a,b]).\]
+      \end{itemize}
+    \remark Pay attention to the conjugate in two definitions. We will study further on the last one in VV286 to establish \emph{Fourier Series}!
+
+    \newpage
     By \textit{the Cauchy-Schwarz inequality}, we define the \emph{angle} $\alpha(u,v)\in[0,\pi]$ \emph{between u and v} by
     \begin{equation}
         \cos\alpha(u,v)=\frac{\scp{u}{v}}{\|u\|\|v\|}.
@@ -582,7 +660,7 @@
     \end{equation*}
     is called the \emph{orthogonal projection} of $v$ onto $U$.\\
     \newpage
-    The projection theorem essentially states that \textbf{$\pi_Uv$ always exists} and is independent of the choice of the orthonormal system (it \textbf{depends only on the span $U$} of the system).
+    The projection theorem essentially states that \textbf{$\pi_Uv$ always exists} and is independent of the choice of the orthonormal system (it depends only on the span $U$ of the system).
     \nullspace
     Moreover, it generalize the idea of projection:
     $$
@@ -627,7 +705,7 @@
     Learn Well\\
     And\\
     Have Fun!\\
-    
+
 
 \end{frame}
 
