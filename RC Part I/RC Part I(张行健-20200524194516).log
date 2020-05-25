@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.6)  20 MAY 2020 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.6)  20 MAY 2020 14:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1141,19 +1141,12 @@ Package pdftex.def Info: logo.png  used on input line 356.
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 356.
+Package pdftex.def Info: logo.png  used on input line 371.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [20
 
 ]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 371.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [21
-
-]
-<chart1.png, id=247, 1565.85pt x 610.28pt>
+<chart1.png, id=241, 1565.85pt x 610.28pt>
 File: chart1.png Graphic file (type png)
 <use chart1.png>
 Package pdftex.def Info: chart1.png  used on input line 382.
@@ -1162,31 +1155,24 @@ File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 382.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [22
+ [21
 
  <./chart1.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 396.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [22
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 409.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [23
 
 ]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 409.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [24
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 409.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [25
-
-]
-<2020-05-16-10-31-38.png, id=276, 1360.33218pt x 175.40532pt>
+<2020-05-16-10-31-38.png, id=263, 1360.33218pt x 175.40532pt>
 File: 2020-05-16-10-31-38.png Graphic file (type png)
 <use 2020-05-16-10-31-38.png>
 Package pdftex.def Info: 2020-05-16-10-31-38.png  used on input line 460.
@@ -1200,7 +1186,7 @@ Package epstopdf Info: Source file: <u+w_gr1.eps>
 (epstopdf)             Command: <repstopdf --outfile=u+w_gr1-eps-converted-to.pdf u+w_gr1.eps>
 (epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
-<u+w_gr1-eps-converted-to.pdf, id=277, 286.06876pt x 258.9675pt>
+<u+w_gr1-eps-converted-to.pdf, id=264, 286.06876pt x 258.9675pt>
 File: u+w_gr1-eps-converted-to.pdf Graphic file (type pdf)
 <use u+w_gr1-eps-converted-to.pdf>
 Package pdftex.def Info: u+w_gr1-eps-converted-to.pdf  used on input line 460.
@@ -1214,7 +1200,7 @@ Package epstopdf Info: Source file: <u+w_gr2.eps>
 (epstopdf)             Command: <repstopdf --outfile=u+w_gr2-eps-converted-to.pdf u+w_gr2.eps>
 (epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
-<u+w_gr2-eps-converted-to.pdf, id=278, 286.06876pt x 260.975pt>
+<u+w_gr2-eps-converted-to.pdf, id=265, 286.06876pt x 260.975pt>
 File: u+w_gr2-eps-converted-to.pdf Graphic file (type pdf)
 <use u+w_gr2-eps-converted-to.pdf>
 Package pdftex.def Info: u+w_gr2-eps-converted-to.pdf  used on input line 460.
@@ -1228,7 +1214,7 @@ Package epstopdf Info: Source file: <u+w_gr3.eps>
 (epstopdf)             Command: <repstopdf --outfile=u+w_gr3-eps-converted-to.pdf u+w_gr3.eps>
 (epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
-<u+w_gr3-eps-converted-to.pdf, id=279, 286.06876pt x 260.975pt>
+<u+w_gr3-eps-converted-to.pdf, id=266, 286.06876pt x 260.975pt>
 File: u+w_gr3-eps-converted-to.pdf Graphic file (type pdf)
 <use u+w_gr3-eps-converted-to.pdf>
 Package pdftex.def Info: u+w_gr3-eps-converted-to.pdf  used on input line 460.
@@ -1242,7 +1228,7 @@ Package epstopdf Info: Source file: <u+w_gr4.eps>
 (epstopdf)             Command: <repstopdf --outfile=u+w_gr4-eps-converted-to.pdf u+w_gr4.eps>
 (epstopdf)             \includegraphics on input line 460.
 Package epstopdf Info: Output file is already uptodate.
-<u+w_gr4-eps-converted-to.pdf, id=280, 286.06876pt x 252.945pt>
+<u+w_gr4-eps-converted-to.pdf, id=267, 286.06876pt x 252.945pt>
 File: u+w_gr4-eps-converted-to.pdf Graphic file (type pdf)
 <use u+w_gr4-eps-converted-to.pdf>
 Package pdftex.def Info: u+w_gr4-eps-converted-to.pdf  used on input line 460.
@@ -1251,20 +1237,35 @@ File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 460.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [26
+ [24
 
  <./2020-05-16-10-31-38.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 460.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [27
+ [25
 
 
  <./u+w_gr1-eps-converted-to.pdf> <./u+w_gr2-eps-converted-to.pdf> <./u+w_gr3-eps-converted-to.pdf> <./u+w_gr4-eps-converted-to.pdf>]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 460.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [26
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 505.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [27
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 505.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [28
 
@@ -1275,6 +1276,7 @@ File: logo.png Graphic file (type png)
 Package pdftex.def Info: logo.png  used on input line 505.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [29
+
 
 ]
 File: logo.png Graphic file (type png)
@@ -1287,46 +1289,46 @@ Package pdftex.def Info: logo.png  used on input line 505.
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 505.
+Package pdftex.def Info: logo.png  used on input line 513.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [31
 
-
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 505.
+Package pdftex.def Info: logo.png  used on input line 522.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [32
-
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 513.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [33
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 522.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [34
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 522.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [35
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 535.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [33
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 573.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [34
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 573.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [35
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 573.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [36
+
 
 ]
 File: logo.png Graphic file (type png)
@@ -1335,32 +1337,9 @@ Package pdftex.def Info: logo.png  used on input line 573.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [37
 
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 573.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [38
-
 
 ]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 573.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [39
-
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 573.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [40
-
-
-]
-<2020-05-20-13-53-34.png, id=428, 877.02657pt x 242.40562pt>
+<2020-05-20-13-53-34.png, id=410, 877.02657pt x 242.40562pt>
 File: 2020-05-20-13-53-34.png Graphic file (type png)
 <use 2020-05-20-13-53-34.png>
 Package pdftex.def Info: 2020-05-20-13-53-34.png  used on input line 609.
@@ -1369,14 +1348,14 @@ File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 609.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [41
+ [38
 
  <./2020-05-20-13-53-34.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 609.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [42
+ [39
 
 
 ]
@@ -1384,7 +1363,7 @@ File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 609.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [43
+ [40
 
 
 ]
@@ -1392,40 +1371,40 @@ File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 627.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [41
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 646.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [42
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 646.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [43
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 670.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [44
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 646.
+Package pdftex.def Info: logo.png  used on input line 670.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [45
 
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 646.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [46
-
 
 ]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 670.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [47
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 670.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [48
-
-
-]
-<2020-05-04-01-36-07.png, id=481, 301.125pt x 534.49687pt>
+<2020-05-04-01-36-07.png, id=464, 301.125pt x 534.49687pt>
 File: 2020-05-04-01-36-07.png Graphic file (type png)
 <use 2020-05-04-01-36-07.png>
 Package pdftex.def Info: 2020-05-04-01-36-07.png  used on input line 687.
@@ -1438,21 +1417,21 @@ Package pdftex.def Info: logo.png  used on input line 687.
 Overfull \vbox (7.37369pt too high) detected at line 687
  []
 
-[49
+[46
 
  <./2020-05-04-01-36-07.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 698.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [50
+ [47
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 710.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [51
+ [48
 
 ]
 \tf@nav=\write8
@@ -1476,8 +1455,8 @@ Package rerunfilecheck Warning: File `"RC Part I".out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `"RC Part I".out':
-(rerunfilecheck)             Before: 634F1A042147EF6DB4D2EEB2E3D15CF7;1151
-(rerunfilecheck)             After:  17CF2B505BB52498D8467EDE9836A125;1151.
+(rerunfilecheck)             Before: 17CF2B505BB52498D8467EDE9836A125;1151
+(rerunfilecheck)             After:  634F1A042147EF6DB4D2EEB2E3D15CF7;1151.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -1486,30 +1465,32 @@ Package logreq Info: Writing requests to '"RC Part I".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25242 strings out of 492649
- 476900 string characters out of 6133385
+ 25236 strings out of 492649
+ 476840 string characters out of 6133385
  914713 words of memory out of 5000000
- 28494 multiletter control sequences out of 15000+600000
+ 28493 multiletter control sequences out of 15000+600000
  15759 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,55p,815b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Outline0.3.5.46} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Navigation51} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Outline0.3.4.44} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Outline0.3.5.49} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Outline0.3.3.41} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Outline0.3.4.47} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Outline0.3.2.38} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Outline0.3.3.44} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Outline0.3.1.34} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Outline0.3.2.41} has been referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Outline0.2.4.20} has been referenced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Outline0.3.1.37} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.2.4.21} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "RC Part I.pdf" (51 pages, 482549 bytes).
+Output written on "RC Part I.pdf" (48 pages, 477896 bytes).
 PDF statistics:
- 580 PDF objects out of 1000 (max. 8388607)
- 465 compressed objects within 5 object streams
- 129 named destinations out of 1000 (max. 500000)
+ 561 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 124 named destinations out of 1000 (max. 500000)
  247 words of extra memory for PDF output out of 10000 (max. 10000000)
 

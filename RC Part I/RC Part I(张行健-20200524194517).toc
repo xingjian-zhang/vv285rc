@@ -20,16 +20,16 @@
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {2}{3}{Basis}{17}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{4}{Dimension}{21}{0}{2}
+\beamer@subsectionintoc {2}{4}{Dimension}{20}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Inner Product Spaces}{36}{0}{3}
+\beamer@sectionintoc {3}{Inner Product Spaces}{33}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{1}{Inner Product Space}{37}{0}{3}
+\beamer@subsectionintoc {3}{1}{Inner Product Space}{34}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{2}{Induced Norm}{41}{0}{3}
+\beamer@subsectionintoc {3}{2}{Induced Norm}{38}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{3}{Orthogonality}{44}{0}{3}
+\beamer@subsectionintoc {3}{3}{Orthogonality}{41}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{4}{Projection Theorem}{47}{0}{3}
+\beamer@subsectionintoc {3}{4}{Projection Theorem}{44}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{5}{Best Approximation}{49}{0}{3}
+\beamer@subsectionintoc {3}{5}{Best Approximation}{46}{0}{3}
