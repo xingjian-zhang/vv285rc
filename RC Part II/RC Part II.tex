@@ -51,7 +51,7 @@
     citecolor=themecolor,
 }
 
-\title{VV285 RC Part I}
+\title{VV285 RC Part II}
 \subtitle{\textbf{Elements of Linear Algebra}\\``Matrices are just linear maps!"}
 \institute[UM-SJTU JI]{Univerity of Michigan-Shanghai Jiao Tong University Joint Institute}
 \author{Xingjian Zhang}
@@ -74,6 +74,14 @@
         \item Please open your camera so that I can receive more feedbacks from you. (Makes our life easier!)
         \item The class is designed to be interactive. However, if you really do not want to be asked at all, please type an ``\_'' before your zoom name.
     \end{itemize}
+\end{frame}
+
+\section{Homework}
+\begin{frame}
+    \frametitle{Homework}
+    Ability to use \textit{Mathematica} will help you a lot! Meantime, do not forget how to solve questions directly by your hand.
+
+
 \end{frame}
 
 \section{Linear Maps}
@@ -112,6 +120,7 @@
         \item $T:\R^2\rightarrow\R, T(x,y)=\sqrt{xy}$;
         \item $T:\R\rightarrow\R, T(x)=x+1$;
         \item A continuous additive map;
+        \item Coordinate map.
     \end{enumerate}
 
     \pause
@@ -135,6 +144,13 @@
     \end{itemize}
 
     \remark They are just fancy names. You only need to know what is an isomorphism.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Injective, Surjective \& Bijective}
+
+
+
 \end{frame}
 
 \begin{frame}
@@ -245,6 +261,12 @@
     \begin{equation}
         \dim\text{ran}L+\dim\text{ker}L=\dim U.
     \end{equation}
+    \nullspace
+    \textbf{Prove}:
+    if $\dim U= \dim V$, then
+    \begin{itemize}
+        \item $\dim U = \dim \text{ran } L \Rightarrow L$ is surjective;
+    \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -256,7 +278,7 @@
     \remark We encounter an alternative, either
     \begin{itemize}
         \item $L$ is bijective, or
-        \item $L$ is nor surjective or injective.
+        \item $L$ is neither surjective nor injective.
     \end{itemize}
 \end{frame}
 
@@ -338,11 +360,18 @@
         \center
         ``Matrices are just linear maps!''\\
     \end{quote}
+    Another golden rule to keep in mind
+    \begin{quote}
+        ``The columns of the matrix are the images of the standard basis vector.”
+    \end{quote}
+\end{frame}
 
-    \small
+\begin{frame}
+    \frametitle{\textbf{Matrices = Linear Maps}}
     Why is this equivalency so important? Because inspired by this theorem we can further define the operation of matrices, prove some cool properties of matrices, and etc. It will greatly help you understand what's going on in the future study of linear algebra.
 
     For example, we will soon show that the derivatives of a vector function is actually a matrix! Why is that? Recall that the derivative is the linear approximation of the original function at some point. And a matrix is just a linear map! Then it immediately makes sense.
+
 \end{frame}
 
 \begin{frame}
@@ -391,8 +420,35 @@
     \end{itemize}
 \end{frame}
 
-\subsection{Matrix Inverse}
 \begin{frame}
+    \frametitle{Matrix Trace}
+    For $A=\left(a_{i j}\right)_{i, j=1}^{n} \in \operatorname{Mat}(n \times n, \mathbb{C})$ we define the \emph{trace} $$\operatorname{tr} A:=\sum_{i=1}^{n} a_{i i}$$
+
+    \textbf{Properties}:
+    \begin{itemize}
+        \item $\operatorname{tr} i d_n=n$
+        \item $\operatorname{tr}(A+B)=\operatorname{tr} A+\operatorname{tr} B $
+        \item $\operatorname{tr} A^{T}=\operatorname{tr} A    $
+        \item $\operatorname{tr}\left(A H^{T}+H A^{T}\right)=2 \operatorname{tr} A H^{T}$ (How to prove?)
+    \end{itemize}
+    \nullspace
+    \textbf{Remark}: Always give your answer in the most concise way (in exams).
+\end{frame}
+
+\begin{frame}
+    \frametitle{Comments from Former TAs}
+    This is the part of an announcement for mid2 grading last year.
+    \nullspace
+    \begin{quote}
+        To start with, most of you finished your solution with $\operatorname{tr}\left(A^{T} H+H^{T} A\right)$ (similar for the second derivative). The answer itself is indeed correct. However, I have deducted 1 point since it is equally important to see that $\operatorname{tr} A=\operatorname{tr} A^{T},$ and simplify the answer to $2 \operatorname{tr}\left(A^{T} H\right) .$ There are also some students who write out the answer element-wise, I have also deducted point to sort of balance the grading. In my defense, it is not only important to know how to differentiate abstract object without exhaustively listing its component elementwise, but also you should be able to see it through that $2 \operatorname{tr}\left(A^{T} H\right)$ is the most precise answer".
+    \end{quote}
+
+\end{frame}
+
+
+
+\subsection{Matrix Inverse}
+\begin{frame}[allowframebreaks]
     \frametitle{Matrix Inverse}
     A matrix $A\in\text{Mat}(n\times n;\R)$ is called \emph{invertible} if there exists some $B\in\text{Mat}(n\times n;\R)$ such that
     \begin{equation}\label{eq19}
@@ -403,12 +459,28 @@
         \end{pmatrix}.
     \end{equation}
     We then write $B=A^{-1}$ and say that $A^{-1}$ is the \emph{inverse} of $A$.\\
-    \small
+    \nullspace\textbf{Exercise}:
+    Calculate the inverse of
+    \[
+        A=\frac{1}{5 \sqrt{2}}\left(\begin{array}{ccc}
+                3 & -3 & 2 \sqrt{2}  \\
+                4 & -4 & -3 \sqrt{2} \\
+                5 & 5  & 0
+            \end{array}\right)
+    \]
+    \newpage
+    How to find the inverse of a given matrix?
+    \begin{itemize}
+        \item Use the Gau\ss-Jordan Algorithm (i.e. to find a series of elementary matrix manipulations to transform the matrix into a unit matrix)
+        \item (\textit{8.25. Theorem}) Let $A=(a_{ij})\in\text{Mat}(n\times n)$ be invertible. Then
+              \[A^{-1}=\frac{1}{\det A}A^{\sharp}\]
+              You will learn this soon.
+    \end{itemize}
     \remark
     \begin{itemize}
         \item The inverse is unique. (How to prove?)
         \item We only need to verify $AB=id$ or $BA=id$ to conclude $B=A^{-1}$ by \textit{6.12. Remark.}
-        \item However, it is not always true (For finite-dimensional vector space, it is true) that $L_1L_2=id\Rightarrow L_2L_1=id$ for two general linear maps $L_1,L_2$!
+        \item However, it is not always true (For finite-dimensional vector space, it is true) that $L_1\circ L_2=id\Rightarrow L_2\circ L_1=id$ for two general linear maps $L_1,L_2$!
     \end{itemize}
 \end{frame}
 
@@ -417,22 +489,86 @@
     Let $l^2$ be space of square summable sequence and $L,R$ be left and right shift defined by
     $$
         \begin{aligned}
-             & L:l^2\rightarrow l^2, (a_n)\mapsto(l_n)=(a_{n+1})\\
+             & L:l^2\rightarrow l^2, (a_n)\mapsto(l_n)=(a_{n+1})                  \\
              & R:l^2\rightarrow l^2, (a_n)\mapsto(r_n)=\begin{cases}
-                0 & n=0  \\
+                0       & n=0     \\
                 a_{n-1} & n\neq 0
             \end{cases}
         \end{aligned}
     $$
-    We notice that $RL=id\neq LR$. Hence we say that for $L$, only \textit{left inverse} exists; for $R$, only \textit{right inverse} exists.\nullspace
-    \textbf{Question}: What is the adjoint of $L$? (Hint: use the definition of adjoint in your assignment.)
+    We notice that $L\circ R=id\neq R\circ L$. Hence we say that for $L$, only \textit{right inverse} exists; for $R$, only \textit{left inverse} exists.\nullspace
+    \textbf{Question}: What is the adjoint of $L,R$? (Hint: use the definition of adjoint in your assignment.)
+\end{frame}
+
+\begin{frame}
+    \frametitle{Left Inverse \& Right Inverse}
+    \pause $L^*=R\quad R^*=L$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Let $N$ be a square matrix. We say that $N$ is \emph{nilpotent} if there exists a positive integer $r$ such that $N^{r}=0 .$ where $0$ is the zero matrix. Prove that if $N$ is nilpotent then $N-$id is invertible
+
+    (Hint: id$^r-N^r=$ id)
+
 \end{frame}
 
 \subsection{Change of Basis}
 \begin{frame}
     \frametitle{Change of Basis}
-
+    \small Change of basis, especially from the passive view, is sometimes hard to understand. What are we doing when we add some linear transform $T$ to the vector $x$? \textbf{We are essentially apply $T^{-1}$ to the given basis of that space.} The coordinate system is not an inherent part of the space. For example, a physical law should hold no matter what coordinate systems we choose. It is like we merely describe the same thing in different languages! Inspired by this, we might prefer to use the passive view.\\
+    In brief,
+    \begin{itemize}
+        \item In an active transformation, given a basis, we start from a vector and we find a new vector in the same basis.
+        \item In a passive transformation we have a vector expressed in a basis and we express it in a new basis.
+    \end{itemize}
+    \textbf{Extension}:
+    \href{https://www.youtube.com/watch?v=P2LTAUO1TdA}{Change of Basis - 3B1B}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Example}
+    Why do we want to change the basis?\\[9pt]
+    \pause
+    One possible situation is, we can decrease the computing complexity in certain coordinate systems. You will learn \emph{tensor of inertia} in \textit{VP160}. It is a $3\times 3$ self-adjoint matrix that describe how distribution of an object's mass affects its rotation. Specifically,
+    $$L=I\omega$$
+    where $L\in \R^3$ is angular momentum, $I\in \text{mat}(3\times 3;\R)$ is the tensor of inertia, and $\omega\in\R^3$ is angular velocity.
+    If we can rotate the coordinate system, so that $I$ is in a diagonal form:
+    $$
+        I=\begin{pmatrix}
+            \lambda_1 & 0         & 0         \\
+            0         & \lambda_2 & 0         \\
+            0         & 0         & \lambda_3
+        \end{pmatrix}
+    $$
+    we can dramatically simplify the computation.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Remarks about Assignment 2}
+    You should attach importance to these new concepts in the assignment:
+    \begin{itemize}
+        \item Dual space
+        \item Matrix elements
+        \item \textbf{Adjoint}
+        \item Orthogonal matrix
+        \item \textbf{Range-Kernel decomposition}
+        \item Projection
+        \item \textbf{Trace}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Discussion}
+    \vspace{1cm}
+    \begin{center}
+        \LARGE
+        Have Fun\\
+        And\\
+        Learn Well!
+    \end{center}
+
+
+\end{frame}
 
 \end{document}

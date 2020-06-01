@@ -1,0 +1,205 @@
+\documentclass[12pt, t]{beamer}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{float} 
+\usepackage{multido}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{indentfirst} 
+\usepackage[style=mla]{biblatex}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{textpos}
+
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
+
+\definecolor{Turquoise3}{RGB}{0, 134, 139}
+\renewcommand{\emph}[1]{{\color{Turquoise3}\textsl{#1}}}
+\newcommand{\C}{\mathbb{C}} \newcommand{\F}{\mathbb{F}} \newcommand{\R}{\mathbb{R}} \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\myseries}[2]{$#1_1,#1_2,\dots,#1_#2$}
+\newcommand{\nullspace}{~\\[15pt]}
+\newcommand{\remark}{\textbf{Remark: }}
+\newcommand{\scp}[2]{\langle\,#1\,,\,#2\,\rangle} \newcommand{\scpp}{\langle\,\cdot\,,\,\cdot\,\rangle}
+
+
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+\addtobeamertemplate{frametitle}{}{
+\begin{textblock*}{100mm}(0.85\textwidth,-1cm)
+\includegraphics[height=1cm]{logo.png}
+\end{textblock*}}
+
+\definecolor{themecolor}{RGB}{25,25,112} 
+
+\usecolortheme[named=themecolor]{structure}
+
+\setbeamertemplate{items}[default]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=themecolor,
+    filecolor=themecolor,      
+    urlcolor=themecolor,
+    citecolor=themecolor,
+}
+
+\title{VV285 RC Mid1}
+\subtitle{\textbf{Elements of Linear Algebra}\\\large Determinant}
+\institute[UM-SJTU JI]{Univerity of Michigan-Shanghai Jiao Tong University Joint Institute}
+\author{Xingjian Zhang}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \begin{center}
+        \includegraphics[height=2cm]{logo2.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Overview}
+
+    \begin{enumerate}
+        \item Determinant in $\R^2$ and $\R^3$
+        \item Definition of Determinant
+        \item Properties of Determinant
+        \item Practical Way to Calculate Determinant by Hand
+        \item Find Inverse by Determinant
+        \item Determinants and System of Equations
+    \end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Determinant in $\R^2$ and $\R^3$}
+    \begin{itemize}
+        \item Determinant in $\R^2$
+              \begin{equation}\label{eq27}
+                  \det:\text{Mat}(2\times 2;\R)\to\R,\qquad\det\begin{pmatrix}
+                      a_1 & b_1 \\
+                      a_2 & b_2
+                  \end{pmatrix}=a_1b_2-a_2b_1.
+              \end{equation}
+        \item Determinant in $\R^3$
+              \begin{equation}\label{eq28}
+                  \det:\R^3\times\R^3\times\R^3\to\R,\qquad\det(a,b,c)=\scp{a\times b}{c}.
+              \end{equation}
+        \item Cross Product
+              \begin{equation}\mathbf{u} \times \mathbf{v}=\left|\begin{array}{ccc}
+                      \mathbf{e_1} & \mathbf{e_2} & \mathbf{e_3} \\
+                      u_{1}        & u_{2}        & u_{3}        \\
+                      v_{1}        & v_{2}        & v_{3}
+                  \end{array}\right|\end{equation}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Formulas of Determinant}
+    For every $n\in\N,n>1$, there exists a unique, normed, alternating $n$-multilinear form det:$\underbrace{\R^n\times\cdots\times\R^n}_{n~\text{times}}\cong\text{Mat}(n\times n;\R)\to\R$.\\[7pt]
+    Furthermore,\\
+    (Using Permutation:  \textit{Leibnitz Formula})
+    \begin{equation}\label{1.7.17}
+        \det(a_1,\ldots,a_n)=\det A=\sum_{\pi\in S_n}\text{sgn}\,\pi a_{\pi(1)1}\cdots a_{\pi(n)n},
+    \end{equation}
+    (Using Recursion:  \textit{Laplace Expansion})
+    \begin{equation}\label{1.7.21}
+        \det A=\sum_{i=1}^{n}(-1)^{i+j}a_{ij}\det A_{ij}
+    \end{equation}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Properties of Determinant}
+    Three basis properties:
+    \begin{itemize}
+        \item n-multilinear
+        \item normed
+        \item alternating\\
+              (when multilinearity holds,)
+              \begin{itemize}
+                  \item[(i)] $f$ is alternating
+                  \item[(ii)] $f(a_1,\ldots,a_{j-1},a_j,a_{j+1},\ldots,a_{k-1},a_k,a_{k+1},\ldots,a_p)$\\ \begin{flushright}
+                            $=-f(a_1,\ldots,a_{j-1},a_k,a_{j+1},\ldots,a_{k-1},a_j,a_{k+1},\ldots,a_p)$
+                        \end{flushright}
+                  \item[(iii)] $f(a_1,\ldots,a_p)=0$ if \myseries{a}{p} are linearly dependent.
+              \end{itemize}
+    \end{itemize}
+    \nullspace
+    \remark The property of alternating enables determinant to test whether a matrix's column vectors are linearly independent.
+    \newpage
+    Properties regarding elementary column operations:
+    \begin{itemize}
+        \small
+        \item The determinant of a matrix $A$ changes sign if two columns of $A$ are interchanged, e.g.,
+              \[\det(a_2,a_1,\ldots,a_n)=-\det(a_1,a_2,\ldots,a_n)\]
+        \item Multiplying all the entries in a column with a number $\lambda$ leads to the determinant being multiplied by this constant:
+              \[\det(a_1,\ldots,\lambda a_j,\ldots,a_n)=\lambda\det(a_1,\ldots,a_j,\ldots,\ldots,a_n)\]
+        \item Adding a multiple of a column to another column does not change the value of the determinant:
+              \[\det(a_1,\ldots,a_j,\ldots,a_k+\lambda a_j,\ldots,a_n)=\det(a_1,\ldots,a_j,\ldots,a_k,\ldots,a_n)\]
+    \end{itemize}
+    \remark Properties regarding elementary row operations are analogous.
+    \newpage
+    Properties regarding matrix operations:
+    \begin{itemize}
+        \item Matrix Transpose$$\det A=\det A^T$$
+        \item Matrix Product $$\det (AB)=\det A \det B$$
+        \item Matrix Inverse $$\det A^{-1}=\dfrac{1}{\det A}$$
+        \item Calculate Matrix Inverse\[A^{-1}=\frac{1}{\det A}A^{\sharp}\]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Practical Ways to Calculate}
+    Let $A\in\text{Mat}(n\times n)$ have upper triangular form, i.e.,
+    \[A=\begin{pmatrix}
+            \lambda_1 &        & *         \\
+                      & \ddots &           \\
+            0         &        & \lambda_n
+        \end{pmatrix}\]
+    for diagonal elements \myseries{\lambda}{n}$\in\R$ and arbitrary values (denoted by $*$) above the diagonal. Then
+    \[\det A=\lambda_1\cdots\lambda_n.\]
+        \\[9pt]
+        \remark
+    This method can be applied to calculate determinants of matrices $A\in\text{Mat}(n\times n)$ when $A$ is first transformed to upper triangular form using elementary matrix manipulations. This is of practical use for $n\geq 4$.
+
+
+\end{frame}
+
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
+    \frametitle{Determinants and Systems of Equations}
+    Determinants have a deep relation with the solutions of systems of equations. For a $n\times n$ matrix $A$, \\[9pt]
+
+    When $\det A \neq 0$, we have
+
+    \begin{enumerate}
+        \item $A$ is invertible,
+        \item $\ker A = \{0\}$ and $\dim \ker A = 0$,
+        \item $\text{ran }A=\R^n$ and $\dim \text{ran }A=n$,
+        \item The column vectors $a_{.k}$ and row vectors $a_{j.}$ of $A$ are linear independent.
+        \item $\text{rank }A=n$
+        \item $Ax=b$ has a unique solution $x=A^{-1}b$ for any $b\in\R^n$.
+    \end{enumerate}
+
+    \newpage
+    When $\det A = 0$, we have
+
+    \begin{enumerate}
+        \item $A$ is not invertible,
+        \item $\ker A \neq \{0\}$ and $\dim \ker A > 0$,
+        \item $\text{ran }A \subsetneq  \R^n$ and $\dim \text{ran }A<n$,
+        \item The column vectors $a_{.k}$ and row vectors $a_{j.}$ of $A$ are linear dependent.
+        \item $\text{rank }A<n$
+        \item $Ax=0$ has (infinite) non-trivial solutions $x\in \ker A$.
+    \end{enumerate}
+    \nullspace
+    \remark
+    These arguments connect everything we learned, from systems of linear equations to determinants. Ask yourself whether you can understand the relationship between each argument.
+\end{frame}
+
+\end{document}

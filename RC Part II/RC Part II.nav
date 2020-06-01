@@ -11,179 +11,233 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {1}{2}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {1}{Linear Maps}{3}{Linear Maps}{0}}
+\headcommand {\sectionentry {1}{Homework}{3}{Homework}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {3}{3}}
 \defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {3}{3}}
+\defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {3}{3}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Definition of Linear Maps}}
+\headcommand {\sectionentry {2}{Linear Maps}{4}{Linear Maps}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{1}{4/4}{Definition of Linear Maps}{0}}
+\headcommand {\slideentry {2}{0}{1}{4/4}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {4}{4}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{1}{2}{5/6}{Definition of Linear Maps}{0}}
+\headcommand {\beamer@subsectionpages {4}{4}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {5}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Definition of Linear Maps}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {4}{6}}
+\headcommand {\slideentry {2}{1}{1}{5/5}{Definition of Linear Maps}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{2}{7}{Homomorphism}}
+\headcommand {\beamer@framepages {5}{5}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{1}{7/7}{Homomorphism}{0}}
+\headcommand {\slideentry {2}{1}{2}{6/7}{Definition of Linear Maps}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@framepages {6}{7}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{2}{8/8}{Homomorphism}{0}}
+\headcommand {\beamer@subsectionpages {5}{7}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{2}{2}{8}{Homomorphism}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {2}{2}{1}{8/8}{Homomorphism}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {8}{8}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{3}{9/10}{Homomorphism}{0}}
+\headcommand {\slideentry {2}{2}{2}{9/9}{Homomorphism}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {9}{10}}
+\headcommand {\beamer@framepages {9}{9}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{2}{4}{11/11}{Homomorphism}{0}}
+\headcommand {\slideentry {2}{2}{3}{10/10}{Homomorphism}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@framepages {10}{10}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {7}{11}}
+\headcommand {\slideentry {2}{2}{4}{11/12}{Homomorphism}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{3}{12}{Dual Basis}}
+\headcommand {\beamer@framepages {11}{12}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{3}{1}{12/12}{Dual Basis}{0}}
+\headcommand {\slideentry {2}{2}{5}{13/13}{Homomorphism}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@framepages {13}{13}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{3}{1}{12/13}{Dual Basis}{0}}
+\headcommand {\beamer@subsectionpages {8}{13}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{14}{Dual Basis}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {12}{13}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{4}{14}{Range and Kernel}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{1}{14/14}{Range and Kernel}{0}}
+\headcommand {\slideentry {2}{3}{1}{14/14}{Dual Basis}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {14}{14}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{4}{2}{15/16}{Range and Kernel}{0}}
+\headcommand {\slideentry {2}{3}{1}{14/15}{Dual Basis}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {15}{16}}
+\headcommand {\beamer@framepages {14}{15}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {14}{16}}
+\headcommand {\beamer@subsectionpages {14}{15}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{5}{17}{Isomorphism}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{16}{Range and Kernel}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{5}{1}{17/17}{Isomorphism}{0}}
+\headcommand {\slideentry {2}{4}{1}{16/16}{Range and Kernel}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@framepages {16}{16}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\slideentry {2}{4}{2}{17/18}{Range and Kernel}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{6}{18}{Dimension Formula}}
+\headcommand {\beamer@framepages {17}{18}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{6}{1}{18/18}{Dimension Formula}{0}}
+\headcommand {\beamer@subsectionpages {16}{18}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{19}{Isomorphism}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{6}{2}{19/19}{Dimension Formula}{0}}
+\headcommand {\slideentry {2}{5}{1}{19/19}{Isomorphism}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {19}{19}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {18}{19}}
+\headcommand {\beamer@subsectionpages {19}{19}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{1}{7}{20}{Operator Norm}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{20}{Dimension Formula}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{7}{1}{20/20}{Operator Norm}{0}}
+\headcommand {\slideentry {2}{6}{1}{20/20}{Dimension Formula}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {20}{20}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {1}{7}{2}{21/21}{Operator Norm}{0}}
+\headcommand {\slideentry {2}{6}{2}{21/21}{Dimension Formula}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {21}{21}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {3}{21}}
-\defcounter {refsection}{0}\relax 
 \headcommand {\beamer@subsectionpages {20}{21}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {2}{Matrices}{22}{Matrices}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{7}{22}{Operator Norm}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{0}{1}{22/22}{}{0}}
+\headcommand {\slideentry {2}{7}{1}{22/22}{Operator Norm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {22}{22}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {22}{22}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{1}{23}{Definition of Matrix}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{1}{1}{23/23}{Definition of Matrix}{0}}
+\headcommand {\slideentry {2}{7}{2}{23/23}{Operator Norm}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {23}{23}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\beamer@sectionpages {4}{23}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{2}{24}{Matrices as Linear Maps}}
+\headcommand {\beamer@subsectionpages {22}{23}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{2}{1}{24/24}{Matrices as Linear Maps}{0}}
+\headcommand {\sectionentry {3}{Matrices}{24}{Matrices}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{0}{1}{24/24}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {24}{24}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{2}{2}{25/25}{Matrices as Linear Maps}{0}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{1}{25}{Definition of Matrix}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{1}{1}{25/25}{Definition of Matrix}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {25}{25}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{2}{3}{26/26}{Matrices as Linear Maps}{0}}
+\headcommand {\beamer@subsectionpages {25}{25}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{2}{26}{Matrices as Linear Maps}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{2}{1}{26/26}{Matrices as Linear Maps}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {26}{26}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {24}{26}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{3}{27}{Matrix Product}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{3}{1}{27/27}{Matrix Product}{0}}
+\headcommand {\slideentry {3}{2}{2}{27/27}{Matrices as Linear Maps}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {27}{27}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {27}{27}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{4}{28}{Matrix Transpose/Adjoint}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{4}{1}{28/28}{Matrix Transpose/Adjoint}{0}}
+\headcommand {\slideentry {3}{2}{3}{28/28}{Matrices as Linear Maps}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {28}{28}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {28}{28}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{5}{29}{Matrix Properties}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{5}{1}{29/29}{Matrix Properties}{0}}
+\headcommand {\slideentry {3}{2}{4}{29/29}{Matrices as Linear Maps}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {29}{29}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {29}{29}}
+\headcommand {\beamer@subsectionpages {26}{29}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{6}{30}{Matrix Inverse}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{30}{Matrix Product}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{6}{1}{30/30}{Matrix Inverse}{0}}
+\headcommand {\slideentry {3}{3}{1}{30/30}{Matrix Product}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {30}{30}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{6}{2}{31/31}{Matrix Inverse}{0}}
+\headcommand {\beamer@subsectionpages {30}{30}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{4}{31}{Matrix Transpose/Adjoint}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{4}{1}{31/31}{Matrix Transpose/Adjoint}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {31}{31}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {30}{31}}
+\headcommand {\beamer@subsectionpages {31}{31}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{2}{7}{32}{Change of Basis}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{32}{Matrix Properties}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {2}{7}{1}{32/32}{Change of Basis}{0}}
+\headcommand {\slideentry {3}{5}{1}{32/32}{Matrix Properties}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@partpages {1}{32}}
-\headcommand {\beamer@subsectionpages {32}{32}}
-\headcommand {\beamer@sectionpages {22}{32}}
-\headcommand {\beamer@documentpages {32}}
-\headcommand {\gdef \inserttotalframenumber {29}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{5}{2}{33/33}{Matrix Properties}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {33}{33}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{5}{3}{34/34}{Matrix Properties}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {34}{34}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {32}{34}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{6}{35}{Matrix Inverse}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{6}{1}{35/35}{Matrix Inverse}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {35}{35}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{6}{1}{35/36}{Matrix Inverse}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {35}{36}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{6}{1}{35/37}{Matrix Inverse}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {35}{37}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{6}{2}{38/38}{Matrix Inverse}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {38}{38}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{6}{3}{39/40}{Matrix Inverse}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {39}{40}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{6}{4}{41/41}{Matrix Inverse}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {41}{41}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {35}{41}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{7}{42}{Change of Basis}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{7}{1}{42/42}{Change of Basis}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {42}{42}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{7}{2}{43/44}{Change of Basis}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {43}{44}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{7}{3}{45/45}{Change of Basis}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {45}{45}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{7}{4}{46/46}{Change of Basis}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@partpages {1}{46}}
+\headcommand {\beamer@subsectionpages {42}{46}}
+\headcommand {\beamer@sectionpages {24}{46}}
+\headcommand {\beamer@documentpages {46}}
+\headcommand {\gdef \inserttotalframenumber {41}}
