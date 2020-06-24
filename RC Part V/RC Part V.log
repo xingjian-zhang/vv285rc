@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.6)  1 JUN 2020 13:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.6)  20 JUN 2020 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/JI/student work/VV285 RC/RC/RC Part III/RC Mid1"
-(d:/JI/student work/VV285 RC/RC/RC Part III/RC Mid1.tex
+**"d:/JI/student work/VV285 RC/RC/RC Part V/RC Part V"
+(d:/JI/student work/VV285 RC/RC/RC Part V/RC Part V.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
@@ -815,8 +815,8 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 ))
 \@quotelevel=\count353
 \@quotereset=\count354
- (./RC Mid1.aux)
-\openout1 = `"RC Mid1.aux"'.
+ (./RC Part V.aux)
+\openout1 = `"RC Part V.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -904,9 +904,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 58.
 LaTeX Info: Redefining \pageref on input line 58.
 LaTeX Info: Redefining \nameref on input line 58.
- (./RC Mid1.out) (./RC Mid1.out)
+ (./RC Part V.out) (./RC Part V.out)
 \@outlinefile=\write7
-\openout7 = `"RC Mid1.out"'.
+\openout7 = `"RC Part V.out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 58.
@@ -973,141 +973,288 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout6 = `"RC Mid1.bcf"'.
+\openout6 = `"RC Part V.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '"RC Mid1".bbl' not found.
+Package biblatex Info: ... file '"RC Part V".bbl' not found.
 
-No file "RC Mid1".bbl.
+No file "RC Part V".bbl.
 Package biblatex Info: Reference section=0 on input line 58.
 Package biblatex Info: Reference segment=0 on input line 58.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(./RC Mid1.nav)
-<logo2.png, id=44, 225.9642pt x 170.5572pt>
+(./RC Part V.nav)
+<logo2.png, id=60, 225.9642pt x 170.5572pt>
 File: logo2.png Graphic file (type png)
 <use logo2.png>
 Package pdftex.def Info: logo2.png  used on input line 65.
 (pdftex.def)             Requested size: 75.39246pt x 56.9055pt.
 
-Overfull \vbox (0.4443pt too high) detected at line 65
+Overfull \vbox (3.2443pt too high) detected at line 65
  []
 
 [1
 
-{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo2.png>] (./RC Mid1.toc)
-<logo.png, id=66, 469.755pt x 87.4467pt>
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo2.png>] (./RC Part V.toc)
+<logo.png, id=86, 469.755pt x 87.4467pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 84.
+Package pdftex.def Info: logo.png  used on input line 73.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [2
 
  <./logo.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 108.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 108.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
  (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 108.
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 84.
  (c:/texlive/2018/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 108.
+Package pdftex.def Info: logo.png  used on input line 84.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [3
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 123.
+Package pdftex.def Info: logo.png  used on input line 98.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [4
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 165.
+Package pdftex.def Info: logo.png  used on input line 113.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [5
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 165.
+Package pdftex.def Info: logo.png  used on input line 128.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [6
 
+Overfull \vbox (2.44203pt too high) detected at line 128
+ []
+
+[6
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 165.
+Package pdftex.def Info: logo.png  used on input line 147.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [7
 
-
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 183.
+Package pdftex.def Info: logo.png  used on input line 159.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [8
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 215.
+Package pdftex.def Info: logo.png  used on input line 168.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
  [9
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 215.
+Package pdftex.def Info: logo.png  used on input line 192.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [10
+
+Overfull \vbox (1.06346pt too high) detected at line 192
+ []
+
+[10
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 207.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [11
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 218.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [12
+
+]
+Overfull \hbox (39.47224pt too wide) detected at line 247
+[]
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 247.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+[13
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 247.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [14
 
 
 ]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 264.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [15
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 280.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [16
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 292.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [17
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 302.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [18
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 333.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [19
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 333.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [20
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 348.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [21
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 348.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [22
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 355.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [23
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 363.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [24
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 392.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [25
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 392.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [26
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 392.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [27
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 404.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [28
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 415.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+ [29
+
+]
 \tf@nav=\write8
-\openout8 = `"RC Mid1.nav"'.
+\openout8 = `"RC Part V.nav"'.
 
 \tf@toc=\write9
-\openout9 = `"RC Mid1.toc"'.
+\openout9 = `"RC Part V.toc"'.
 
 \tf@snm=\write10
-\openout10 = `"RC Mid1.snm"'.
+\openout10 = `"RC Part V.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
- (./RC Mid1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
-Package rerunfilecheck Info: File `"RC Mid1".out' has not changed.
-(rerunfilecheck)             Checksum: A168BB62F5265E38A66E03BC1FD1A0AE;469.
-Package logreq Info: Writing requests to '"RC Mid1".run.xml'.
-\openout1 = `"RC Mid1.run.xml"'.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 417.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 417.
+ (./RC Part V.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 417.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 417.
+Package rerunfilecheck Info: File `"RC Part V".out' has not changed.
+(rerunfilecheck)             Checksum: C2B4A89CAD2B9ECF5922204BF3752D52;682.
+Package logreq Info: Writing requests to '"RC Part V".run.xml'.
+\openout1 = `"RC Part V.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25017 strings out of 492649
- 474701 string characters out of 6133385
- 916719 words of memory out of 5000000
- 28374 multiletter control sequences out of 15000+600000
- 17536 words of font info for 63 fonts, out of 8000000 for 9000
+ 25067 strings out of 492649
+ 474423 string characters out of 6133385
+ 916818 words of memory out of 5000000
+ 28381 multiletter control sequences out of 15000+600000
+ 12257 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,62p,835b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "RC Mid1.pdf" (10 pages, 243467 bytes).
+ 56i,17n,62p,835b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "RC Part V.pdf" (29 pages, 263903 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

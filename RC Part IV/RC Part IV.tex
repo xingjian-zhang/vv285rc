@@ -1,0 +1,415 @@
+\documentclass[12pt, t]{beamer}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{float} 
+\usepackage{multido}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{indentfirst} 
+\usepackage[style=mla]{biblatex}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{textpos}
+
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
+
+\definecolor{Turquoise3}{RGB}{0, 134, 139}
+\renewcommand{\emph}[1]{{\color{Turquoise3}\textsl{#1}}}
+\newcommand{\C}{\mathbb{C}} \newcommand{\F}{\mathbb{F}} \newcommand{\R}{\mathbb{R}} \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\myseries}[2]{$#1_1,#1_2,\dots,#1_#2$}
+\newcommand{\nullspace}{~\\[15pt]}
+\newcommand{\remark}{\textbf{Remark: }}
+\newcommand{\scp}[2]{\langle\,#1\,,\,#2\,\rangle} \newcommand{\scpp}{\langle\,\cdot\,,\,\cdot\,\rangle}
+
+
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+\addtobeamertemplate{frametitle}{}{
+\begin{textblock*}{100mm}(0.85\textwidth,-1cm)
+\includegraphics[height=1cm]{logo.png}
+\end{textblock*}}
+
+\definecolor{themecolor}{RGB}{25,25,112} 
+
+\usecolortheme[named=themecolor]{structure}
+
+\setbeamertemplate{items}[default]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=themecolor,
+    filecolor=themecolor,      
+    urlcolor=themecolor,
+    citecolor=themecolor,
+}
+
+\title{VV285 RC Part IV}
+\subtitle{\textbf{Differential Calculus}\\\large Sets, Norms, Continuity \& Convergence}
+\institute[UM-SJTU JI]{Univerity of Michigan-Shanghai Jiao Tong University Joint Institute}
+\author{Xingjian Zhang}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \begin{center}
+        \includegraphics[height=2cm]{logo2.png}
+    \end{center}
+\end{frame}
+
+\section{Sets, Norms, Continuity \& Convergence}
+\begin{frame}
+    \frametitle{Outline}
+    \begin{spacing}{1.5}
+        \tableofcontents[currentsubsection,hideothersubsections,sectionstyle=hide]
+    \end{spacing}
+\end{frame}
+
+\subsection{Insight}
+\begin{frame}[allowframebreaks]
+    \frametitle{Insight}
+    From now on, we will have a study into vector(-valued) function, i.e. functions
+    \[f:\R^n\to\R^m.\]
+
+    In the second part of VV285, we will \small
+    \begin{enumerate}
+        \item establish the theory of continuity and convergence based on the definition of open set and equivalence of norm (in finite vector space).
+        \item investigate the derivative of a vector(-valued) function (a matrix, why?).
+        \item investigate the curve (a special vector function from $\R\to V$).
+        \item investigate the potential function (another special vector function from $V\to \R$).
+        \item investigate the second derivative of a potential function (still a matrix, why?).
+        \item learn some techniques to find the extrema of a potential function.
+        \item study the extrema of a real potential function under constraints (plays an important role in engineering).
+    \end{enumerate}
+\end{frame}
+
+\subsection{Open Balls \& Sets}
+\begin{frame}
+    \frametitle{Open Balls}
+    Let $(V,\|\cdot\|)$ be a normed vector space. Then
+    \setcounter{equation}{0}
+    \begin{equation}\label{2.1.1}
+        B_\varepsilon(a):=\left\{x\in V:\|x-a\|<\varepsilon\right\},\qquad a\in V,\varepsilon>0,
+    \end{equation}
+    is called an \emph{open ball} of radius $\varepsilon$ about $a$.
+    \nullspace
+    \textbf{Remark:} 1. Open ball in $\R$ is open interval. (It is therefore the generalized open interval in $\R^n$.) 2. The ``shape'' of open balls depends on the vector space $V$ and the norm $\|\cdot\|$.
+    \nullspace
+    \textbf{Question:} Draw the unit open balls in $\R^2$ with norms
+    \begin{equation}\label{2.1.2}
+        \begin{aligned}
+            \|x\|_1        & =|x_1|+|x_2|,            \\
+            \|x\|_2        & =\sqrt{|x_1|^2+|x_2|^2}, \\
+            \|x\|_{\infty} & =\max\{|x_1|,|x_2|\}
+        \end{aligned}
+    \end{equation}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Open Sets}
+    Let $(V,\|\cdot\|)$ be a normed vector space. A set $U\subset V$ is called \emph{open} if for every $a\in U$ there exists an $\varepsilon>0$ such that $B_{\varepsilon}(a)\subset U$.\\
+\end{frame}
+
+\subsection{Equivalent Norms}
+\begin{frame}
+    \frametitle{Equivalent Norms}
+    \emph{Definition.} Let $V$ be a vector space on which we may define two norms $\|\cdot\|_1$ and $\|\cdot\|_2$. Then the two norms are called \emph{equivalent} if there exists two constants $C_1,C_2>0$ such that
+    \begin{equation}\label{2.1.3}
+        C_1\|x\|_1\leq\|x\|_2\leq C_2\|x\|_1\qquad\qquad\text{for all}~x\in V.
+    \end{equation}
+
+    \emph{Theorem.} In a finite-dimensional vector space, all norms are equivalent.
+    \nullspace
+    \textbf{Remark:} In the proof, we have a basic norm inequality:
+    Let $(V,\|\cdot\|)$ be a finite- or infinite-dimensional normed vector space and $\{v_1,\ldots,v_n\}$ an \textbf{independent} set in $V$. Then there exists a $C>0$ such that for any \myseries{\lambda}{n}$\in\F$
+    \begin{equation}\label{2.1.5}
+        \|\lambda_1v_1+\cdots+\lambda_nv_n\|\geq C\left(|\lambda_1|+\cdots+|\lambda_n|\right).
+    \end{equation}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Theorem of \textit{Bolzano-Weierstra\ss} in $\R^n$}
+    In VV186, we proved: Every bounded sequence of real
+    numbers has a convergent subsequence.
+    \nullspace
+    Now we extend it to $\R^n$
+    \nullspace
+
+
+    Let $(x^{(m)})_{m\in\N}$ be a sequence of vectors in $\R^n$, i.e., $x^{(m)}=\left(x_1^{(m)},\ldots,x_n^{(m)}\right)$. Suppose that there exists a constant $C>0$ such that $\left|x_k^{(m)}\right|<C$ for all $m\in\N$ and each $k=1,\ldots,n$. Then there exists a subsequence $\left(x^{(m_j)}\right)_{j\in\N}$ that converges to a vector $y\in\R^n$. (What is the key of proof?)
+    \nullspace\pause
+    \textbf{Remark:} The key is to construct sub-sub-...-subsequence one by one.
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Theorem of \textit{Bolzano-Weierstra\ss} in $\R^n$}
+    \textbf{Question:} Does the theorem of \textit{Bolzano-Weierstra\ss} hold in an infinite-dimensional vector space?
+
+    \pause
+    \nullspace
+    \textbf{No.}\\
+    \textbf{Counterexample:} $\ell^{1}:=\left\{\left(a_{n}\right): \sum_{n=0}^{\infty}\left|a_{n}\right|<\infty\right\}$ denotes summable sequences.
+    Consider $e^{(n)}=(0,0,0, \ldots, 1,0,0, \ldots),$ where $\left\|e^{(n)} \right\|_{1}=1 . \text { But }\left(e^{(n)}\right)$ does not converge. (Why?)
+    \nullspace
+    \textbf{Remark:} The proof of the Theorem of \textit{Bolzano-Weierstraß} in $\mathbb{R}^n$ gives us a primary concept of ``a stopping point'' when obtaining the subsequences. However, in infinite-dimensional vector space, the theorem does not hold.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Non Equivalent Norms in $\infty$-dim VS}
+    Consider the space of continuous functions on $[0,1],C([0,1])$. We can define the two norms
+    \[\|f\|_{\infty}=\sup\limits_{x\in[0,1]}|f(x)|,\qquad\qquad
+        \|f\|_1=\int_{0}^{1}|f(x)|dx.\]
+    \nullspace
+    Consider function $f$:
+\end{frame}
+
+\subsection{Open, Closed Set}
+
+\begin{frame}
+    \frametitle{Interior, Exterior and Boundary Points}
+    Let $(V,\|\cdot\|)$ be a normed vector space and $M\subset V$.
+    \begin{enumerate}[(i)]
+        \item A point $x\in M$ is called an \emph{interior point of M} if there exists an $\varepsilon>0$ such that $B_{\varepsilon}(x)\subset M$.
+        \item The set of interior points of $M$ is denoted by $\text{int}~M$.
+        \item A point $x\in V$ is called a \emph{boundary point of M} if for every $\varepsilon>0,B_{\varepsilon}(x)\cap M\neq\emptyset$ and $B_{\varepsilon}(x)\cap(V\setminus M)\neq\emptyset$.
+        \item The set of boundary points of $M$ is denoted by $\partial M$.
+        \item A point that is neither a boundary nor an interior point of $M$ is called an \emph{exterior point of M}.
+        \item An exterior point of $M$ is an interior point of $V\setminus M$.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Open \& Closed Set}
+    \emph{Open Set}
+    \begin{enumerate}
+        \item Let $(V,\|\cdot\|)$ be a normed vector space. A set $U\subset V$ is called \emph{open} if for every $a\in U$ there exists an $\varepsilon>0$ such that $B_{\varepsilon}(a)\subset U$.
+        \item The set $M$ is open if and only if $M=\text{int}~M$.
+        \item The set $M$ is open if and only if $M^c=V\backslash M$ is closed.
+    \end{enumerate}
+    \emph{Closed Set}
+    \begin{enumerate}
+        \item  Let $(V,\|\cdot\|)$ be a normed vector space and $M\subset V$. Then $M$ is said to be \emph{closed} if its complement $V\setminus M$ is open. (The set $M$ is closed if and only if $M^c=V\backslash M$ is open.)
+        \item The set $M$ is closed if and only if it contains all of its boundary points ($\partial M\subset M$).
+        \item The set $M$ is closed if and only if it coincides with its closure ($M=\overline{M}$).
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Consider the following subsets of $\mathbb{R}^{2}$
+    \[
+        A=\{(x, y): 0<x<1, \ln x<y<0\}
+    \]
+    For this set, state
+    \begin{enumerate}
+        \item whether it is open, closed or neither,
+        \item $\overline{A}$
+        \item $\text{int }A, \partial A,$ and set of exterior points of $A$.
+        \item $\partial A \cap A$ (the boundary points that are part of the set).
+    \end{enumerate}
+
+    \pause
+    \begin{enumerate}
+        \item It's open.
+        \item $\overline{A}=\{(x, y): 0<x \leq 1, \ln x \leq y \leq 0\} \cup\{(0, y): y \leq 0\}$
+        \item int $A=A$, $\partial A=\{(0, y): y \leq 0\} \cup\{(x, 0): 0<x<1\} \cup\{(x, \ln x): 0<x \leq 1\}$, ext $A=\mathbb{R}^{2} /(\text { int } A \cup \partial A)$
+        \item $\emptyset$
+    \end{enumerate}
+\end{frame}
+
+\subsection{Closure}
+\begin{frame}
+    \frametitle{Closure}
+    Let $(V,\|\cdot\|)$ be a normed vector space and $M\subset V$. Then
+    \[\overline{M}:=M\cup\partial M\]
+    is called the \emph{closure} of $M$.
+    Closure can also be defined using sequences equivalently:
+    \begin{equation}\label{2.1.8}
+        \overline{M}=\left\{x\in V:\mathop{\exists}_{(x_n)_{n\in\N}}x_n\in M~\text{and}~x_n\to x\right\}
+    \end{equation}
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Now let's do some conceptually interesting exercise. Is the following set open, closed, both or neither? Find their closure.
+    \begin{enumerate}
+        \item $\emptyset$,
+        \item $\R^n$, the whole vector space,
+        \item $\{a\}$, set of a single point,
+        \item the set of all symmetric matrices: $\left\{A \in \operatorname{Mat}(n \times n ; \mathbb{R}): A=A^{T}\right\}$
+        \item the set of all invertible matrices (so-called \textit{General Linear Group}): $\left\{A \in \operatorname{Mat}(n \times n ; \mathbb{R}): \det A\neq 0\right\}$
+        \item the set $\Omega=\{A \in \operatorname{Mat}(2 \times 2): \operatorname{det} A=1\}$
+        \item * the set of all polynomials in $C([-1,1])$ (Are all the subspaces closed in an infinite-dimensional vector space?)
+        \item find a neither open nor closed set.
+    \end{enumerate}
+\end{frame}
+
+\subsection{Continuity}
+\begin{frame}
+    \frametitle{Continuous Function}
+    Let $(U,\|\cdot\|_1)$ and $(V,\|\cdot\|_2)$ be normed vector spaces and $f:U\to V$ a function. Then $f$ is \emph{continuous at $a\in U$} if
+    \begin{equation}\label{2.1.9}
+        \mathop{\forall}_{\varepsilon>0}\mathop{\exists}_{\delta>0}\mathop{\forall}_{x\in U}~\|x-a\|_1<\delta\qquad\quad\Rightarrow\qquad\quad\|f(x)-f(a)\|_2<\varepsilon.
+    \end{equation}
+    \vspace*{9pt}
+    We can rewrite the definition in the form of open ball. (How?)
+
+    Of course, we can prove as usual the following:
+
+    \nullspace
+    \emph{Theorem.} Let $(U,\|\cdot\|_1)$ and $(V,\|\cdot\|_2)$ be normed vector spaces and $f:U\to V$ a function. Then $f$ is \emph{continuous at $a\in U$} if and only if
+    \begin{equation}\label{2.1.10}
+        \mathop{\forall}_{\begin{subarray}
+                ~(x_n)_{n\in\N}\\
+                ~x_n\in U
+            \end{subarray}}x_n\to a\qquad\quad\Rightarrow\qquad\quad f(x_n)\to f(a).
+    \end{equation}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Define $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$ by $f(x, 0)=0$ and
+    \[
+        f(x, y)=\left(1-\cos \frac{x^{2}}{y}\right) \sqrt{x^{2}+y^{2}}
+    \]
+    for $y \neq 0$. Show that $f$ is continuous at (0,0) by definition.
+    \nullspace
+    \pause
+    We show that $\lim _{\sqrt{x^{2}+y^{2}} \rightarrow 0} f(x, y)=0 .$ We have for all $(x, y) \in \mathbb{R}^{2}$
+    \[
+        |f(x, y)| \leq \sqrt{x^{2}+y^{2}}\left|1-\cos \frac{x^{2}}{y}\right| \leq 2 \sqrt{x^{2}+y^{2}} \rightarrow 0
+    \]
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Find the limit if it exists
+    \[
+        \lim _{(x, y) \rightarrow(0,0)} \frac{x^{2} y}{x^{4}+y^{2}}
+    \]
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Images and Pre-Images of Sets}
+    Suppose that $f:M\to N$, where $M,N$ are any sets. Let $A\subset M$. Then we define the \emph{image of A} by
+    \[f(A):=\{y\in N:y=f(x)~\text{for some }x\in A\}.\]
+    In particular, we can write
+    \[\text{ran }f=f(M).\]
+    Similarly, for $B\subset N$ we define the \emph{pre-image of B} by
+    \begin{equation}\label{2.1.11}
+        f^{-1}(B):=\{x\in M:f(x)=y~\text{for some}~y\in B\}.
+    \end{equation}
+    \textbf{(T/F?)} $$f\left(A_{1} \cap A_{2}\right)=f\left(A_{1}\right) \cap f\left(A_{2}\right)$$
+    $$f\left(A_{1} \cup A_{2}\right)=f\left(A_{1}\right) \cup f\left(A_{2}\right)$$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Det}
+    Determinant is continuous function. (How do we prove this?)
+    \pause
+    \nullspace
+    We basically do nothing but claim that determinant takes the form of polynomials. And a polynomial is continuous clearly. Formally, we need to first define a norm, and use sequence to prove its continuity.
+
+    \nullspace \textbf{Tricky question*}: Is a determinant a uniformly continuous function?
+
+\end{frame}
+
+\subsection{Compact Sets}
+\begin{frame}
+    \frametitle{Compact Sets}
+    Let $(V,\|\cdot\|)$ be a normed vector space and $K\subset V$. Then $K$ is said to be \emph{compact} if every sequence in $K$ has a convergent subsequence with limit contained in $K$.
+    \nullspace
+    \textbf{Remark:}
+    In infinite-dimensional vector space,
+    \begin{center}
+        compact $\Rightarrow$ closed and bounded.
+
+    \end{center}
+    In finite-dimensional vector space,
+    \begin{center}
+        compact $\Leftrightarrow$ closed and bounded.
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Functions on Compact Sets}
+    Let $\left(U,\|\cdot\|_{U}\right)$ and $\left(V,\|\cdot\|_{V}\right)$ be normed vector spaces and $K \subset U$ is compact. The function $f: K \rightarrow V$ is continuous. Then we know
+    \begin{enumerate}
+        \item $f(K)$ is compact in $V$
+        \item $f$ has a least upper bound on $K$
+        \item $f$ is uniformly continuous on $K$
+    \end{enumerate}
+    \nullspace
+    \textbf{Remark:} Compact set is the $\R^n$ generalization of closed interval in $\R$.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Uniform Continuity}
+    \emph{Continuity.}
+    Let $(U,\|\cdot\|_1)$ and $(V,\|\cdot\|_2)$ be normed vector spaces and $f:U\to V$ a function. Then $f$ is \emph{continuous at $a\in U$} if
+    \begin{equation}\label{2.1.9}
+        \mathop{\forall}_{\varepsilon>0}\mathop{\exists}_{\delta>0}\mathop{\forall}_{x\in U}~\|x-a\|_1<\delta\qquad\quad\Rightarrow\qquad\quad\|f(x)-f(a)\|_2<\varepsilon.
+    \end{equation}
+    \emph{Uniform Continuity.}
+    Let $(U,\|\cdot\|_1)$ and $(V,\|\cdot\|_2)$ be normed vector spaces, $\Omega\subset U$ and $f:\Omega\to V$ a function. Then $f$ is \emph{uniformly continuous in $\Omega$} if
+    \begin{equation}\label{2.1.13}
+        \mathop{\forall}_{\varepsilon>0}\mathop{\exists}_{\delta>0}\mathop{\forall}_{x,y\in\Omega}\|x-y\|_1<\delta\qquad
+        \quad\Rightarrow\qquad\quad\|f(x)-f(y)\|_2<\varepsilon.
+    \end{equation}
+
+    \nullspace
+    Compare the difference between the two definition. \pause  * Prove the determinant is \textbf{not} uniformly continuous.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Uniform Continuity}
+    \emph{Uniform Continuity.}
+    Let $(U,\|\cdot\|_1)$ and $(V,\|\cdot\|_2)$ be normed vector spaces, $\Omega\subset U$ and $f:\Omega\to V$ a function. Then $f$ is \emph{uniformly continuous in $\Omega$} if
+    \begin{equation}\label{2.1.13}
+        \mathop{\forall}_{\varepsilon>0}\mathop{\exists}_{\delta>0}\mathop{\forall}_{x,y\in\Omega}\|x-y\|_1<\delta\qquad
+        \quad\Rightarrow\qquad\quad\|f(x)-f(y)\|_2<\varepsilon.
+    \end{equation}
+
+    * Prove the determinant is \textbf{not} uniformly continuous.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Abount Assignment}
+    Some points you'd better understand in the assignment 4:
+    \begin{enumerate}
+        \item \emph{distance} of a point $x$ to $M$,
+        \item \emph{distance} between a compact set $K$ and a closed set $M$,
+        \item \emph{non-equivalence} of norm in infinite-dimensional vector space,
+        \item closed, bounded, but \textbf{not} compact set in  infinite-dimensional vector space.
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Discussion}
+    \vspace{1cm}
+    \begin{center}
+        \LARGE
+        Have Fun\\
+        And\\
+        Learn Well!
+    \end{center}
+
+
+\end{frame}
+
+\end{document}

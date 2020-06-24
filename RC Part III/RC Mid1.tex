@@ -9,6 +9,7 @@
 \usepackage{booktabs}
 \usepackage{indentfirst} 
 \usepackage[style=mla]{biblatex}
+\usepackage{setspace}
 \usepackage{subcaption}
 \usepackage{hyperref}
 \usepackage{textpos}
@@ -63,20 +64,26 @@
     \end{center}
 \end{frame}
 
+\section{Determinants}
 \begin{frame}
-    \frametitle{Overview}
-
-    \begin{enumerate}
-        \item Determinant in $\R^2$ and $\R^3$
-        \item Definition of Determinant
-        \item Properties of Determinant
-        \item Practical Way to Calculate Determinant by Hand
-        \item Find Inverse by Determinant
-        \item Determinants and System of Equations
-    \end{enumerate}
+    \frametitle{Outline}
+    \begin{spacing}{2.5}
+        
+        \tableofcontents[currentsubsection,hideothersubsections,sectionstyle=hide]        
+    \end{spacing}
+    
+        % \begin{enumerate}
+    %     \item Determinant in $\R^2$ and $\R^3$
+    %     \item Definition of Determinant
+    %     \item Properties of Determinant
+    %     \item Practical Way to Calculate Determinant by Hand
+    %     \item Find Inverse by Determinant
+    %     \item Determinants and System of Equations
+    % \end{enumerate}
 
 \end{frame}
 
+\subsection{Determinants in two- and three-dimensional space}
 \begin{frame}
     \frametitle{Determinant in $\R^2$ and $\R^3$}
     \begin{itemize}
@@ -100,6 +107,7 @@
     \end{itemize}
 \end{frame}
 
+\subsection{Definition of Determinants}
 \begin{frame}
     \frametitle{Formulas of Determinant}
     For every $n\in\N,n>1$, there exists a unique, normed, alternating $n$-multilinear form det:$\underbrace{\R^n\times\cdots\times\R^n}_{n~\text{times}}\cong\text{Mat}(n\times n;\R)\to\R$.\\[7pt]
@@ -114,6 +122,7 @@
     \end{equation}
 \end{frame}
 
+\subsection{Properties of Determinants}
 \begin{frame}[allowframebreaks]
     \frametitle{Properties of Determinant}
     Three basis properties:
@@ -152,10 +161,12 @@
         \item Matrix Inverse $$\det A^{-1}=\dfrac{1}{\det A}$$
         \item Calculate Matrix Inverse\[A^{-1}=\frac{1}{\det A}A^{\sharp}\]
     \end{itemize}
+    \remark Another way to find inverse is to use the Gau\ss-Jordan Algorithm.
 \end{frame}
 
+\subsection{Practical Ways to Calculate Determinants}
 \begin{frame}
-    \frametitle{Practical Ways to Calculate}
+    \frametitle{Practical Ways to Calculate Determinants}
     Let $A\in\text{Mat}(n\times n)$ have upper triangular form, i.e.,
     \[A=\begin{pmatrix}
             \lambda_1 &        & *         \\
@@ -164,13 +175,14 @@
         \end{pmatrix}\]
     for diagonal elements \myseries{\lambda}{n}$\in\R$ and arbitrary values (denoted by $*$) above the diagonal. Then
     \[\det A=\lambda_1\cdots\lambda_n.\]
-        \\[9pt]
-        \remark
+    \\[9pt]
+    \remark
     This method can be applied to calculate determinants of matrices $A\in\text{Mat}(n\times n)$ when $A$ is first transformed to upper triangular form using elementary matrix manipulations. This is of practical use for $n\geq 4$.
 
 
 \end{frame}
 
+\subsection{Determinants and Systems of Equations}
 \begin{frame}[allowframebreaks,allowdisplaybreaks]
     \frametitle{Determinants and Systems of Equations}
     Determinants have a deep relation with the solutions of systems of equations. For a $n\times n$ matrix $A$, \\[9pt]

@@ -1,0 +1,417 @@
+\documentclass[12pt, t]{beamer}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{float} 
+\usepackage{multido}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{indentfirst} 
+\usepackage[style=mla]{biblatex}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{textpos}
+
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
+
+\definecolor{Turquoise3}{RGB}{0, 134, 139}
+\renewcommand{\emph}[1]{{\color{Turquoise3}\textsl{#1}}}
+\newcommand{\C}{\mathbb{C}} \newcommand{\F}{\mathbb{F}} \newcommand{\R}{\mathbb{R}} \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\myseries}[2]{$#1_1,#1_2,\dots,#1_#2$}
+\newcommand{\nullspace}{~\\[15pt]}
+\newcommand{\remark}{\textbf{Remark: }}
+\newcommand{\scp}[2]{\langle\,#1\,,\,#2\,\rangle} \newcommand{\scpp}{\langle\,\cdot\,,\,\cdot\,\rangle}
+
+
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+\addtobeamertemplate{frametitle}{}{
+\begin{textblock*}{100mm}(0.85\textwidth,-1cm)
+\includegraphics[height=1cm]{logo.png}
+\end{textblock*}}
+
+\definecolor{themecolor}{RGB}{25,25,112} 
+
+\usecolortheme[named=themecolor]{structure}
+
+\setbeamertemplate{items}[default]
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=themecolor,
+    filecolor=themecolor,      
+    urlcolor=themecolor,
+    citecolor=themecolor,
+}
+
+\title{VV285 RC Part V}
+\subtitle{\textbf{Differential Calculus}\\\large First Derivative, Regulated Integral}
+\institute[UM-SJTU JI]{Univerity of Michigan-Shanghai Jiao Tong University Joint Institute}
+\author{Xingjian Zhang}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \begin{center}
+        \includegraphics[height=2cm]{logo2.png}
+    \end{center}
+\end{frame}
+
+\section{First Derivative, Regulated Integral}
+\begin{frame}
+    \frametitle{Outline}
+    \begin{spacing}{1.5}
+        \tableofcontents[currentsubsection,hideothersubsections,sectionstyle=hide]
+    \end{spacing}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Something you need to pay attention to...}
+    Think More and Be Interactive!
+    \begin{itemize}
+        \item Do think more about the question in ``()''. \\e.g. ``(How to prove?)''
+        \item You are welcome to ask questions in a adequate manner.
+        \item Please open your camera so that I can receive more feedbacks from you. (Makes our life easier!) 
+        \item The class is designed to be interactive. However, if you really do not want to be asked at all, please type an ``\_'' before your zoom name.
+    \end{itemize}
+\end{frame}
+
+\subsection{Big- and Small-"O" Notation}
+\begin{frame}
+    \frametitle{Big- and Small-"O" Notation}
+    \emph{Landau Symbols:}
+    \nullspace
+    Let $f:X\to V_1,g:X\to V_2$ and $x_0\in X$. We say that
+    \[f(x)=o(g(x))\qquad\text{as}~x\to x_0\qquad\Leftrightarrow\qquad\lim_{x\to x_0}\frac{\|f(x)\|_{V_1}}{\|g(x)\|_{V_2}}=0\]
+    and
+    \[f(x)=O(g(x))\] has analogous definition as VV186.
+    \nullspace
+    \textbf{Remark} The meaning of $f(x)=o(g(x))$: $f(x)$ is significantly less than $g(x)$.
+    The meaning of $f(x)=O(g(x))$: $f(x)$ is not significantly greater than $g(x)$.
+\end{frame}
+
+\subsection{Derivative of a Function}
+\begin{frame}
+    \frametitle{Derivative of a Function}
+    Let $X,V$ be finite-dimensional vector spaces and $\Omega\subset X$ an open set. Then a map $f:\Omega\to V$ is called \emph{differentiable at $x\in\Omega$} if there exists a linear map $L_x\in\mathcal{L}(X,V)$ such that
+    \setcounter{equation}{0}
+    \begin{equation}\label{2.2.1}
+        f(x+h)=f(x)+L_xh+o(h)\qquad\qquad\text{as}~h\to 0.
+    \end{equation}
+    In this case we call $L_x$ the \emph{derivative of f at x} and write
+    \[L_x=Df|_x=df|_x.\]
+    We say that $f$ is differentiable on $\Omega$ if it is differentiable for every $x\in\Omega$.\\[5pt]
+    \nullspace
+    (How to prove derivative is well-defined? i.e. prove its uniqueness)
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Let $f$ be a function and $f:X\to V$. Distinguish these maps by clarifying it maps from which vector space to which vector space. Are they linear?
+    \begin{spacing}{2}
+        \begin{enumerate}
+            \item $D$,
+            \item $Df$,
+            \item $Df|_x$
+            \item $D^2$
+            \item $D^2f$,
+        \end{enumerate}
+    \end{spacing}
+    What about $D^2f|_x,D^2f|_xy...$
+\end{frame}
+
+\begin{frame}
+    \frametitle{Derivative of Linear Map}
+    The derivative of a linear map $L$ at some point is $L$ itself. (Why?)
+
+    \textbf{Example:}
+    \begin{enumerate}
+        \item $Df|_z(h)=\overline{h}$, where $f(z)=\overline{z}$
+        \item $DA|_x(h)=Ah$
+        \item $D\,\text{tr}|_AH=\text{tr}\,H$
+        \item $DD|_f=Df$
+    \end{enumerate}
+
+    \nullspace
+    \textbf{Remark:}
+    For $A\in \text{GL}(n;\C)$, you will prove (in Ex 5.1.(iii)) that
+    $$\left.D \operatorname{det}\right|_{A} H=\operatorname{det} A \operatorname{tr}\left(A^{-1} H\right)$$
+    (Recall that determinant is multi-linear, why it's derivative is not equal to itself?)
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exercise}
+    Let $A$ be a matrix.
+    \nullspace
+    Easy:\\
+    Calculate the derivative of $f(A)=A^3$.
+    \nullspace
+    Hard:\\
+    Prove the derivative of matrix inverse is: $D(\cdot)^{-1}|_AH =-A^{-1} H A^{-1} $.
+    (Hint: Start with $(A+H)^{-1}=(A(\text{id}+A^{-1}H))^{-1}$.)
+\end{frame}
+
+\begin{frame}
+    \frametitle{The Derivative Is in the Form of Matrix}
+    If exists,
+    \begin{center}
+        $Df|_x\in\mathcal{L}(\R^n,\R^m)\cong\text{Mat}(m\times n;\R).$
+    \end{center}
+    How to obtain this matrix? Denote by $e_j$ the $j$th standard basis vector in $\R^n$ or $\R^m$. We consider the columns of $Df|_x$, which are given by $Df|_xe_j,$ $j=1,\ldots,n.$ Furthermore, the $(i,j)$th element of $Df|_x$ is given by $\scp{e_i}{Df|_xe_j}$. (Recall \emph{matrix elements} in \textit{Exercise 2.2}!)
+\end{frame}
+
+\subsection{Partial Derivative}
+\begin{frame}
+    \frametitle{Partial Derivative}
+    Let $\Omega\subset\R^n$ and $f:\Omega\to\R$ be dif{}ferentiable on $\Omega$.
+    We then define the \emph{partial derivative with
+        respect to $x_j$ at $x\in\Omega$} by
+    \begin{equation*}
+        \begin{split}
+            \left.\frac{\partial f}{\partial x_j}\right|_x &:=\lim_{h\to0}\frac{f(x+he_j)-f(x)}{h} \\
+            &=\lim_{h\to0}\frac{f(x_1,\ldots,x_{j-1},x_j+h,x_{j+1},\ldots,x_n)-f(x)}{h}
+        \end{split}
+    \end{equation*}
+    In this notation,
+    \begin{center}
+        $\displaystyle(Df|_x)_{ij}=\frac{\partial f_i}{\partial x_j}$
+    \end{center}
+    or rather
+    \[Df|_x=(\frac{\partial f}{\partial x_1}  \cdots  \frac{\partial f}{\partial x_n})=\left.\begin{pmatrix}
+            \frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\
+            \vdots                            &        & \vdots                            \\
+            \frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n}
+        \end{pmatrix}\right|_x\]
+\end{frame}
+
+\subsection{Jacobian}
+\begin{frame}
+    \frametitle{Jacobian}
+    Let $\Omega\subset\R^n$ and $f:\Omega\to\R^m$. Assume that all partial derivatives $\frac{\partial f_i}{\partial x_j}$ of $f$ exist at $x\in\Omega$. The matrix
+    \[J_f(x):=\left.\begin{pmatrix}
+            \frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\
+            \vdots                            &        & \vdots                            \\
+            \frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n}
+        \end{pmatrix}\right|_x\]
+    called the \emph{Jacobian} of $f$.\\[4pt]
+    If the derivative $Df|_x\in\mathcal{L}(\R^n,\R^m)$ exists, $J_f(x)\in\text{Mat}(m\times n;\R)$ is the representing matrix of $Df|_x$ w.r.t. the standard bases in $\R^n$ and $\R^m$.
+    \nullspace
+    \textbf{Remark:} However, the existence of Jacobian $J_f(x)$ does not imply the differentiability of $f$ at $x$.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Partial Derivatives and Continuity}
+    \begin{enumerate}
+        \item All partial derivatives are bounded $\Rightarrow$ $f$ is \emph{continuous};
+        \item All partial derivatives are continuous $\Rightarrow$ $f$ is \emph{continuously differentiable}.
+    \end{enumerate}
+    \textbf{Remark:} Recall the difference between definition of continuous, differentiable, and continuously differentiable. A function can be differentiable while not continuously differentiable!
+
+    There is a gap between these two results. We now have two simple ways to sufficiently deduce whether $f$ is continuous or continuously differentiable at $x$. However, there is no simple way for us to conclude $f$ is or not differentiable at $x$.
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Example}
+    Let's look at this example, where partial derivatives are not all continuous and $f$ is still differentiable.
+    Define a function $f: \mathbb{R}^{2} \rightarrow \mathbb{R}$
+
+    $$f(x, y)= \left\{\begin{array}{l}
+            \left(x^{2}+y^{2}\right) \sin \left(\frac{1}{\sqrt{x^{2}+y^{2}}}\right), \text { if }(x, y) \neq(0,0) \\
+            0, \text { if }(x, y)=(0,0)
+        \end{array}\right.     $$
+
+    $$\left.\frac{\partial f}{\partial x}\right|_{(0,0)}=\lim _{h \rightarrow 0} \frac{f(h, 0)-f(0,0)}{h}=0 $$
+    $$\left.\frac{\partial f}{\partial x}\right|_{(x, y) \neq(0,0)}=2 x \sin \left(\frac{1}{\sqrt{x^{2}+y^{2}}}\right)-\frac{x}{\sqrt{x^{2}+y^{2}}} \cos \left(\frac{1}{\sqrt{x^{2}+y^{2}}}\right)$$
+
+    $\frac{\partial f}{\partial x}$ exists on $\mathbb{R}^{2},$ but is not continuous on (0,0).
+    \newpage
+    We will verify whether $f$ is differentiable on (0,0) or not with $\left.D f\right|_{(0,0)}=(0,0) .$ For $h=\left(h_{1}, h_{2}\right)^{T}$
+    \[
+        \begin{array}{c}
+            f(h)=f(0)+\left.D f\right|_{(0,0)} h+\left(h_{1}^{2}+h_{2}^{2}\right) \sin \left(\dfrac{1}{\sqrt{h_{1}^{2}+h_{2}^{2}}}\right) \\
+            \lim _{h \rightarrow 0} \dfrac{\left|\left(h_{1}^{2}+h_{2}^{2}\right) \sin \left(\dfrac{1}{\sqrt{h_{1}^{2}+h_{2}^{2}}}\right)\right|}{\|h\|}=\lim _{h \rightarrow 0}\|h\| \cdot\left|\sin \left(\dfrac{1}{\sqrt{h_{1}^{2}+h_{2}^{2}}}\right)\right|=0
+        \end{array}
+    \]
+    which implies that
+    \[
+        \left(h_{1}^{2}+h_{2}^{2}\right) \sin \left(\frac{1}{\sqrt{h_{1}^{2}+h_{2}^{2}}}\right)=o(h)
+    \]
+    Therefore, $f$ is differentiable on (0,0).
+\end{frame}
+
+\subsection{* Second Derivative}
+\begin{frame}
+    \frametitle{* Second Derivative (for Potential Function)}
+    \textbf{Extension: } The second derivative of a potential function is in the form of a matrix called \emph{Hessian}. And
+    $$\operatorname{Hess} f(x)=D(\nabla f)|_x=\begin{pmatrix}
+            \frac{\partial^2 f}{\partial x_1\partial x_1}\Big|_x & \frac{\partial^2 f}{\partial x_2\partial x_1}\Big|_x & \cdots & \frac{\partial^2 f}{\partial x_n\partial x_1}\Big|_x \\
+            \vdots                                               & \vdots                                               &        & \vdots                                               \\
+            \frac{\partial^2 f}{\partial x_1\partial x_n}\Big|_x & \frac{\partial^2 f}{\partial x_2\partial x_n}\Big|_x & \cdots & \frac{\partial^2 f}{\partial x_n\partial x_n}\Big|_x
+        \end{pmatrix}$$
+    where $\nabla f(x) = (Df|_x)^T$.
+    How does Hessian work? We see that if $\tilde{h}\in\R^n$ is some other vector, $D^2f|_xh$ acts on $\tilde{h}$ via
+    \[(D^2f|_xh)\tilde{h}=(\text{Hess}\,f(x)h)^T\tilde{h}
+        =\scp{\text{Hess}\,f(x)h}{\tilde{h}}\in\R.\]
+
+    Furthermore, by \href{https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives}{Schwarz’s Theorem}, if $f\in C^2(\Omega,V)$, Hess$f(x)$ = Hess$f(x)^T$. i.e. \[\frac{\partial^2f}{\partial x_i\partial x_j}=\frac{\partial^2f}{\partial x_j\partial x_i}.\]
+\end{frame}
+
+
+\subsection{Product Rule}
+\begin{frame}
+    \frametitle{Product Rule}
+    Let $U,X_1,X_2,V$ be finite-dimensional vector spaces and $\Omega\subset U$ an open set. Let $f:\Omega\to X_1$ and $g:\Omega\to X_2$ be dif{}ferentiable maps and $\odot:X_1\times X_2\to V$ a \emph{generalized product}. Then $f\odot g:\Omega\to V$ is also dif{}ferentiable and
+    \begin{equation}\label{2.2.2}
+        D(f\odot g)=(Df)\odot g+f\odot(Dg).
+    \end{equation}
+    At $x\in\Omega$ the right-hand side is interpreted as a linear map $U\to V$
+    \begin{equation}\label{2.2.3}
+        u\mapsto D(f\odot g)|_xu=(Df|_xu)\odot g(x)+f(x)\odot(Dg|_xu).
+    \end{equation}
+    \nullspace
+    \textbf{Question: }What is the derivative of $k(t)=f(t)\times g(t)$?
+\end{frame}
+
+\subsection{Chain Rule}
+\begin{frame}
+    \frametitle{Chain Rule}
+    Let $U,X,V$ be finite-dimensional vector spaces and $\Omega\subset U,\Sigma\subset X$ open sets. Let $g:\Omega\to\Sigma$ and $f:\Sigma\to V$ be differentiable maps. Then the composition $f\circ g:\Omega\to V$ is also differentiable and for all $x\in\Omega$
+    \begin{equation}\label{2.2.4}
+        D(f\circ g)|_x=Df|_{g(x)}\circ Dg|_x,
+    \end{equation}
+    where the right-hand side is a composition of linear maps.\\[5pt]
+    The proof is basically identical to that of 186 Theorem 3.1.12, the chain
+    rule for functions of one real variable. \\
+\end{frame}
+
+\begin{frame}
+    \frametitle{Exericise}
+    Calculate the derivative of $\operatorname{tr} (AA^T)$ in two ways:
+    \begin{enumerate}
+        \item By definition;
+        \item By chain rule and product rule.
+    \end{enumerate}
+
+\end{frame}
+
+\subsection{Integral of Step Functions}
+\begin{frame}[allowframebreaks]
+    \frametitle{Integral of Step Functions}
+    Let $I\subset\R$ be an interval and $(V,\|\cdot\|_V)$ a normed vector space. We say that a map $f:I\to V$ is \emph{bounded} if
+    \begin{equation}\label{2.2.5}
+        \|f\|_{\infty}:=\sup\limits_{x\in I}\|f(x)\|_V<\infty.
+    \end{equation}
+    The set of all bounded functions $f:I\to V$ is denoted $L^{\infty}(I,V)$.
+    \nullspace
+    A sequence of functions $(f_n),f_n:I\to V,I\subset\R$, \emph{converges uniformly} to $f:I\to V$ in a normed vector space $(V,\|\cdot\|_V)$ if
+    \[\|f_n-f\|_{\infty}:=\sup_{x\in I}\|f_n(x)-f(x)\|_V\xrightarrow[]{x\to\infty}0.\]
+    A function is \emph{regulated} if it is the uniform limit of a sequence of step functions.
+    (What is the closure of the set of step functions in the uniform norm?)
+    \newpage
+    \emph{The standard estimate}
+    \[\left|\int_{a}^{b}f(x)dx\right|_V\leq\int_{a}^{b}\|f(x)\|_Vdx\leq|b-a|\cdot\sup\limits_{x\in[a,b]}\|f(x)\|_V.\]
+    is useful in some proof. You can consider it as a generalization of triangular inequality.
+    \nullspace
+    What are we going to integrate? Vector-Valued functions. For now, however, we are integrating $f:[a,b]\to \R^n$ and
+    \[\int_{a}^{b}f(x)dx=\int_{a}^{b}\begin{pmatrix}
+            f_1(x) \\
+            \vdots \\
+            f_n(x)
+        \end{pmatrix}dx=\begin{pmatrix}
+            \int_{a}^{b}f_1(x)dx \\
+            \vdots               \\
+            \int_{a}^{b}f_n(x)dx
+        \end{pmatrix}\]
+    Later, we will define the integral of general vector-valued function.
+\end{frame}
+
+\subsection{Mean Value Theorem}
+\begin{frame}[allowframebreaks]
+    \frametitle{Mean Value Theorem}
+    Let $X,V$ be finite-dimensional vector spaces, $\Omega\subset X$ open and $f\in C^1(\Omega,V)$. Let $x,y\in\Omega$ and assume that the line segment $x+ty,0\leq t\leq 1$, is wholly contained in $\Omega$. Then
+    \begin{equation}\label{2.2.6}
+        f(x+y)-f(x)=\int_{0}^{1}Df|_{x+ty}ydt=\left(\int_{0}^{1}Df|_{x+ty}dt\right)y.
+    \end{equation}
+    The integrals in \eqref{2.2.6} are integrals of elements of $V$ (the integrand $Df|_{x+ty}y$) and $\mathcal{L}(X,V)$~(the integrand $Df|_{x+ty}$) (NOT trivial!). Here, the Mean Value Theorem can be understood as a generalization of the fundamental theorem of calculus. i.e.
+    \[f(x+y)-f(x)=\int_{x}^{x+y}f'(\xi)d\xi.\]
+    (How?)
+    \newpage
+    Mean Value Theorem is NOT trivial. See this example: $f: (x_1,x_2)\mapsto x_1^2+x_2^2$. We calculate $f(x+y)-f(x)$ in three ways given by Mean Value Theorem.
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Derivative Estimate}
+    From the standard estimate and the Mean Value Theorem, we have
+    \[\|f(x+y)-f(x)\|_V\leq\|y\|_X\cdot\sup_{0\leq t\leq 1}\|Df|_{x+ty}\|,\]
+    where $\|Df|_{x+ty}\|$ denotes the operator norm of $Df|_{x+ty}\in\mathcal{L}(X,V)$.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Differentiating under an Integral}
+    Let $X,V$ be finite-dimensional vector spaces, $I=[a,b]\subset\R$ an interval and $\Omega\subset X$ an open set. Let $f:I\times\Omega\to V$ be a continuous function such that $Df(t,\cdot)$ exists and is continuous for every $t\in I$. Then
+    \[g(x)=\int_{a}^{b}f(t,x)dt\]
+    is differentiable in $\Omega$ and
+    \[Dg(x)=\int_{a}^{b}Df(t,\cdot)|_xdt\]
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{Recap of Euler Gamma Function}
+    An application of previous result is \emph{Euler Gamma Function}. We look into $$\Gamma(n) = \int_{0}^{\infty}x^{n-1}e^{-x}{d}x$$
+
+    which can be obtained by repeated integration by parts starting from the formula
+    \[
+        \int_{0}^{\infty} e^{-x} d x=1
+    \]
+    when $n=0 .$ Now we are going to derive Euler's formula by repeated differentiation after introducing a parameter $t$. For $t>0,$ let $x=t u .$ Then $d x=t d u$ and the above equation becomes
+    \[
+        \int_{0}^{\infty} t e^{-t u} d u=1 \Leftrightarrow
+        \int_{0}^{\infty}  e^{-t u} d u=\dfrac{1}{t} \qquad(*)
+    \]
+    We need $t>0$ in order that $e^{-t x}$ is integrable over the region $x \geq 0$.\\
+    Now, let's differentiate $(*)$ iteratively, and substitute $u$ with $x$:
+    $$ \begin{aligned}
+             & \int_{0}^{\infty}-x e^{-t x} d x=-\frac{1}{t^{2}}                 \\
+             & \int_{0}^{\infty}-x^{2} e^{-t x} d x=-\frac{2}{t^{3}}             \\
+             & \int_{0}^{\infty} x^{3} e^{-t x} \mathrm{d} x=\frac{6}{t^{4}}     \\
+             & \int_{0}^{\infty} x^{4} e^{-t x} \mathrm{d} x=\frac{24}{t^{5}}    \\
+             & \int_{0}^{\infty} x^{5} e^{-t x} \mathrm{d} x=\frac{120}{t^{6}}   \\
+             & \int_{0}^{\infty} x^{n} e^{-t x} \mathrm{d} x=\frac{n !}{t^{n+1}}
+        \end{aligned} $$
+
+    Let $t=1$, we find:
+    $$\Gamma(n) = \int_{0}^{\infty}x^{n-1}e^{-x}{d}x
+        =(n-1)! $$
+\end{frame}
+
+\begin{frame}
+    \frametitle{About Assignment 5}
+    \begin{enumerate}
+        \item[(5.1)] Derivative of Determinant
+        \item[(5.2)] Application of Chain Rule
+        \item[(5.3)] Second Derivative of a Potential Function (You can verify Schwarz’s Theorem by this question).
+        \item[(5.4)] Application of Product Rule
+        \item[(5.7)] Dirichlet Integral (In VV286, we will learn brand-new techniques, \emph{complex analysis}, to solve the same question!)
+        \item[(5.8)] The Condition of Theorem 12.9.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Discussion}
+    \vspace{1cm}
+    \begin{center}
+        \LARGE
+        Have Fun\\
+        And\\
+        Learn Well!
+    \end{center}
+\end{frame}
+
+\end{document}
