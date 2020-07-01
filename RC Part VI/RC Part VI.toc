@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{First Derivative, Regulated Integral}{10}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{1}{Definition of Curves}{12}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{2}{Orientation of Curves}{15}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{3}{Tangent Vector of Curves}{17}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{4}{Curve Length}{19}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{5}{Line Integral of a Scalar Function}{21}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{6}{Normal Vector of Curves, Curvature}{22}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{7}{*Radius of Curvature}{26}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {1}{8}{After Class Exercise}{29}{0}{1}
