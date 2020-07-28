@@ -347,7 +347,7 @@
               \end{align*}
               with $r>0$ and $0<\theta_k<\pi,k=1,\ldots,n-2,0<\theta_{n-1}<2\pi$. Here,
               \[|\det J_\Phi(r,\theta_1,\ldots,\theta_{n-1})|=r^{n-1}\sin^{n-2}\theta_1
-                  \sin^{n-3}\theta_2\ldots\sin\theta_{n-1}.\]
+                  \sin^{n-3}\theta_2\ldots\sin\theta_{n-2}.\]
     \end{itemize}
 \end{frame}
 
@@ -394,11 +394,12 @@
 \begin{frame}
     \frametitle{Exercise}
     With the substitution rule, we can use the spherical coordinates in $\mathbb{R}^{n}$
+    
     \[
         \footnotesize
         \begin{aligned}
-            \int_{\mathbb{R}^{n}} \frac{1}{\|x\|^{m}} d x & =\int_{K} \frac{r^{n-1} \sin ^{n-2} \theta_{1} \sin ^{n-3} \theta_{2} \ldots \sin \theta_{n-1}}{r^{m}} d r d \theta_{1} d \theta_{2} \cdots d \theta_{n-1}                      \\
-                                                          & =\left(\int_{0}^{\pi} \sin ^{n-2} \theta_{1} d \theta_{1}\right) \cdots\left(\int_{0}^{\pi} \sin \theta_{n-1} d \theta_{n-1}\right)\left(\int_{0}^{\infty} r^{n-m-1} d r\right)
+            \int_{\mathbb{R}^{n}} \frac{1}{\|x\|^{m}} d x & =\int_{K} \frac{r^{n-1} \sin ^{n-2} \theta_{1} \sin ^{n-3} \theta_{2} \ldots \sin \theta_{n-2}}{r^{m}} d r d \theta_{1} d \theta_{2} \cdots d \theta_{n-1}                      \\
+                                                          & =\left(\int_{0}^{\pi} \sin ^{n-2} \theta_{1} d \theta_{1}\right) \cdots\left(\int_{0}^{2\pi}   d \theta_{n-1}\right)\left(\int_{0}^{\infty} r^{n-m-1} d r\right)
         \end{aligned}
     \]
     We can just consider whether $\int_{0}^{\infty} r^{n-m-1} d r$ exists For all $k \in \mathbb{Z},$ the targeted value of $\int_{0}^{\infty} r^{k} d r$ is $\infty,$ so all of the integrals do not exist.

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.6)  4 JUL 2020 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.6)  17 JUL 2020 09:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/JI/student work/VV285 RC/RC/RC Part VII/RC Part VII"
-(d:/JI/student work/VV285 RC/RC/RC Part VII/RC Part VII.tex
+**"d:/JI/student work/VV285 RC/RC/Discussion Class/DC2"
+(d:/JI/student work/VV285 RC/RC/Discussion Class/DC2.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
@@ -93,8 +93,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen124
 \Gm@layoutvoffset=\dimen125
 \Gm@dimlist=\toks15
-) (c:/texlive/2018/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+) (c:/texlive/2018/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 ) (c:/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
@@ -799,22 +799,9 @@ Grid set 16 x 16 = 22.7622pt x 17.07166pt
 \TP@prevdepth=\dimen274
 ) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamerthemeMadrid.sty (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)) (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamercolorthemestructure.sty)
 Package hyperref Info: Option `colorlinks' set `true' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
 Package biblatex Info: Trying to load language 'english' -> 'english-mla'...
 Package biblatex Info: ... file 'english-mla.lbx' found.
-(c:/texlive/2018/texmf-dist/tex/latex/biblatex-mla/english-mla.lbx
+ (c:/texlive/2018/texmf-dist/tex/latex/biblatex-mla/english-mla.lbx
 File: english-mla.lbx 2013/03/24 v0.4.5 biblatex style localization
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -828,8 +815,15 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 ))
 \@quotelevel=\count353
 \@quotereset=\count354
- (./RC Part VII.aux)
-\openout1 = `"RC Part VII.aux"'.
+ (./DC2.aux
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+)
+\openout1 = `DC2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
@@ -854,23 +848,23 @@ LaTeX Font Info:    ... okay on input line 60.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(11.74988pt, 340.6956pt, 11.74988pt)
+* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=340.6956pt
+* \textwidth=342.2953pt
 * \textheight=244.6939pt
-* \oddsidemargin=-60.52011pt
-* \evensidemargin=-60.52011pt
+* \oddsidemargin=-61.31996pt
+* \evensidemargin=-61.31996pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=14.22636pt
 * \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -917,9 +911,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 60.
 LaTeX Info: Redefining \pageref on input line 60.
 LaTeX Info: Redefining \nameref on input line 60.
- (./RC Part VII.out) (./RC Part VII.out)
+ (./DC2.out) (./DC2.out)
 \@outlinefile=\write7
-\openout7 = `"RC Part VII.out"'.
+\openout7 = `DC2.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 60.
@@ -986,441 +980,642 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout6 = `"RC Part VII.bcf"'.
+\openout6 = `DC2.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '"RC Part VII".bbl' not found.
+Package biblatex Info: ... file 'DC2.bbl' not found.
 
-No file "RC Part VII".bbl.
+No file DC2.bbl.
 Package biblatex Info: Reference section=0 on input line 60.
 Package biblatex Info: Reference segment=0 on input line 60.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(./RC Part VII.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 67.
- (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 67.
- (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 67.
- (c:/texlive/2018/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-<logo2.png, id=72, 225.9642pt x 170.5572pt>
+(./DC2.nav)
+Overfull \hbox (62.26598pt too wide) in paragraph at lines 60--60
+ [][][][][][]  
+ []
+
+<logo2.png, id=60, 225.9642pt x 170.5572pt>
 File: logo2.png Graphic file (type png)
 <use logo2.png>
 Package pdftex.def Info: logo2.png  used on input line 67.
 (pdftex.def)             Requested size: 75.39246pt x 56.9055pt.
 
-Overfull \vbox (4.0776pt too high) detected at line 67
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
  []
 
 [1
 
-{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo2.png>] (./RC Part VII.toc)
-<logo.png, id=103, 469.755pt x 87.4467pt>
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo2.png>] (./DC2.toc)
+<logo.png, id=85, 469.755pt x 87.4467pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 75.
+Package pdftex.def Info: logo.png  used on input line 76.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [2
 
- <./logo.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 86.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [3
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 107.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [4
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 107.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [5
-
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 107.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [6
-
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 123.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [7
-
-]
-Overfull \hbox (12.31577pt too wide) detected at line 139
-[]
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
  []
 
+[2
+
+ <./logo.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
+ (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
+ (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 87.
+ (c:/texlive/2018/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 139.
+Package pdftex.def Info: logo.png  used on input line 87.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[3
+
+]
+<2020-07-15-12-50-10.png, id=109, 564.60938pt x 557.08125pt>
+File: 2020-07-15-12-50-10.png Graphic file (type png)
+<use 2020-07-15-12-50-10.png>
+Package pdftex.def Info: 2020-07-15-12-50-10.png  used on input line 113.
+(pdftex.def)             Requested size: 119.80544pt x 118.20607pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 113.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[4
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 113.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[5
+
+
+ <./2020-07-15-12-50-10.png>]
+<2020-07-15-10-14-01.png, id=122, 599.23875pt x 491.58656pt>
+File: 2020-07-15-10-14-01.png Graphic file (type png)
+<use 2020-07-15-10-14-01.png>
+Package pdftex.def Info: 2020-07-15-10-14-01.png  used on input line 165.
+(pdftex.def)             Requested size: 102.68962pt x 84.23619pt.
+<2020-07-14-22-23-32.png, id=123, 185.94469pt x 153.57375pt>
+File: 2020-07-14-22-23-32.png Graphic file (type png)
+<use 2020-07-14-22-23-32.png>
+Package pdftex.def Info: 2020-07-14-22-23-32.png  used on input line 165.
+(pdftex.def)             Requested size: 102.68962pt x 84.81497pt.
+<2020-07-15-11-45-14.png, id=124, 576.65437pt x 422.32782pt>
+File: 2020-07-15-11-45-14.png Graphic file (type png)
+<use 2020-07-15-11-45-14.png>
+Package pdftex.def Info: 2020-07-15-11-45-14.png  used on input line 165.
+(pdftex.def)             Requested size: 136.91603pt x 100.27167pt.
+<2020-07-15-11-47-47.png, id=125, 240.14719pt x 125.71968pt>
+File: 2020-07-15-11-47-47.png Graphic file (type png)
+<use 2020-07-15-11-47-47.png>
+Package pdftex.def Info: 2020-07-15-11-47-47.png  used on input line 165.
+(pdftex.def)             Requested size: 136.91603pt x 71.6782pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 165.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[6
+
+ <./2020-07-15-10-14-01.png> <./2020-07-14-22-23-32.png>]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 165.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[7
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 165.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
 [8
 
-]
+
+ <./2020-07-15-11-45-14.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 158.
+Package pdftex.def Info: logo.png  used on input line 165.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [9
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[9
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.165 \end{frame}
+                  <./2020-07-15-11-47-47.png>]
+<e1.pdf, id=159, 361.35pt x 368.37625pt>
+File: e1.pdf Graphic file (type pdf)
+<use e1.pdf>
+Package pdftex.def Info: e1.pdf  used on input line 177.
+(pdftex.def)             Requested size: 102.68962pt x 104.68478pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 \end{frame}
+                 
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 177.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[10
+
+ <./e1.pdf>]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 190.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[11
+
+]
+<2020-07-15-20-08-55.png, id=181, 534.49687pt x 356.0803pt>
+File: 2020-07-15-20-08-55.png Graphic file (type png)
+<use 2020-07-15-20-08-55.png>
+Package pdftex.def Info: 2020-07-15-20-08-55.png  used on input line 201.
+(pdftex.def)             Requested size: 205.37926pt x 136.82239pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 201.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[12
+
+ <./2020-07-15-20-08-55.png>]
+<2020-07-15-20-13-20.png, id=188, 613.54219pt x 371.13657pt>
+File: 2020-07-15-20-13-20.png Graphic file (type png)
+<use 2020-07-15-20-13-20.png>
+Package pdftex.def Info: 2020-07-15-20-13-20.png  used on input line 219.
+(pdftex.def)             Requested size: 171.14764pt x 103.52676pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 219.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[13
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 158.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [10
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 164.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [11
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 170.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [12
-
-]
-<2020-07-01-11-14-48.png, id=190, 940.26282pt x 607.51968pt>
-File: 2020-07-01-11-14-48.png Graphic file (type png)
-<use 2020-07-01-11-14-48.png>
-Package pdftex.def Info: 2020-07-01-11-14-48.png  used on input line 188.
-(pdftex.def)             Requested size: 340.6956pt x 220.12521pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 188.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [13
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 188.
+Package pdftex.def Info: logo.png  used on input line 219.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
 
-Overfull \vbox (4.06725pt too high) detected at line 188
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
  []
 
 [14
 
 
- <./2020-07-01-11-14-48.png>]
+ <./2020-07-15-20-13-20.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 197.
+Package pdftex.def Info: logo.png  used on input line 246.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [15
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[15
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 211.
+Package pdftex.def Info: logo.png  used on input line 262.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [16
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[16
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 222.
+Package pdftex.def Info: logo.png  used on input line 269.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [17
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[17
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 236.
+Package pdftex.def Info: logo.png  used on input line 269.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [18
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[18
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 243.
+Package pdftex.def Info: logo.png  used on input line 292.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [19
+
+Overfull \vbox (4.7496pt too high) detected at line 292
+ []
+
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[19
 
 ]
+<2020-07-15-15-30-11.png, id=234, 1316.66907pt x 718.93594pt>
+File: 2020-07-15-15-30-11.png Graphic file (type png)
+<use 2020-07-15-15-30-11.png>
+Package pdftex.def Info: 2020-07-15-15-30-11.png  used on input line 394.
+(pdftex.def)             Requested size: 136.91603pt x 74.75002pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 255.
+Package pdftex.def Info: logo.png  used on input line 394.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [20
 
-]
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[20
+
+ <./2020-07-15-15-30-11.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 270.
+Package pdftex.def Info: logo.png  used on input line 394.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
 
-Overfull \vbox (6.69344pt too high) detected at line 270
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
  []
 
 [21
 
+
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 278.
+Package pdftex.def Info: logo.png  used on input line 394.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [22
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[22
+
 
 ]
-Overfull \hbox (7.9986pt too wide) detected at line 352
-[]
- []
-
-
-Overfull \hbox (23.49976pt too wide) detected at line 352
-[]
- []
-
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 352.
+Package pdftex.def Info: logo.png  used on input line 394.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \vbox (0.4743pt too high) detected at line 394
+ []
+
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
 [23
 
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 352.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [24
-
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 352.
+Package pdftex.def Info: logo.png  used on input line 394.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [25
 
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
 
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 352.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [26
+[24
 
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 361.
+Package pdftex.def Info: logo.png  used on input line 394.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [27
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[25
+
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 374.
+Package pdftex.def Info: logo.png  used on input line 394.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [28
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[26
+
 
 ]
+<c1.pdf, id=279, 361.35pt x 354.32375pt>
+File: c1.pdf Graphic file (type pdf)
+<use c1.pdf>
+Package pdftex.def Info: c1.pdf  used on input line 414.
+(pdftex.def)             Requested size: 119.80283pt x 117.47325pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 392.
+Package pdftex.def Info: logo.png  used on input line 414.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [29
 
-]
+Overfull \vbox (2.69316pt too high) detected at line 414
+ []
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 406.
 
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 406.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
-[30
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
 
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 415.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [31
+[27
 
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 415.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [32
-
-]
+ <./c1.pdf>]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 426.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [33
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[28
 
 ]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 445.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [34
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 453.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [35
-
-]
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 507.
-
-
-Overfull \hbox (10.539pt too wide) detected at line 507
-\OT1/cmss/m/n/12 (\OT1/mathkerncmss/m/sl/12 x \OMS/cmsy/m/n/12 ^^@ \OT1/mathkerncmss/m/sl/12 a\OT1/cmss/m/n/12 ) [] + (\OT1/mathkerncmss/m/sl/12 y \OMS/cmsy/m/n/12 ^^@ \OT1/mathkerncmss/m/sl/12 b\OT1/cmss/m/n/12 ) [] + (\OT1/mathkerncmss/m/sl/12 z \OMS/cmsy/m/n/12 ^^@ \OT1/mathkerncmss/m/sl/12 c\OT1/cmss/m/n/12 )(\OMS/cmsy/m/n/12 ^^@ [] \OML/cmm/m/it/12 ^^R [] ^^R\OT1/cmss/m/n/12 ) = 0
+Overfull \hbox (1.08026pt too wide) detected at line 452
+\OT1/mathkerncmss/m/sl/10.95 W \OT1/cmss/m/n/10.95 = [][] [] \OT1/mathkerncmss/m/sl/10.95 d\OML/cmm/m/it/10.95 ^^R \OT1/cmss/m/n/10.95 = []\OML/cmm/m/it/10.95 :
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 507.
+Package pdftex.def Info: logo.png  used on input line 452.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[29
+
+]
+<c2.pdf, id=311, 325.215pt x 330.23375pt>
+File: c2.pdf Graphic file (type pdf)
+<use c2.pdf>
+Package pdftex.def Info: c2.pdf  used on input line 469.
+(pdftex.def)             Requested size: 119.80283pt x 121.65044pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 469.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[30
+
+ <./c2.pdf>]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 481.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[31
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 508.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[32
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 527.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[33
+
+]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 548.
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 548.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[34
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 548.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[35
+
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 548.
+(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
 [36
 
+
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 507.
+Package pdftex.def Info: logo.png  used on input line 548.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [37
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[37
 
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 518.
+Package pdftex.def Info: logo.png  used on input line 557.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [38
+
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[38
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 534.
+Package pdftex.def Info: logo.png  used on input line 569.
 (pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [39
 
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 551.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [40
+Overfull \hbox (62.26598pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
 
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 566.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [41
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 577.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [42
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 590.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [43
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 604.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [44
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 614.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [45
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 627.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [46
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 642.
-(pdftex.def)             Requested size: 152.84059pt x 28.45274pt.
- [47
+[39
 
 ]
 \tf@nav=\write8
-\openout8 = `"RC Part VII.nav"'.
+\openout8 = `DC2.nav'.
 
 \tf@toc=\write9
-\openout9 = `"RC Part VII.toc"'.
+\openout9 = `DC2.toc'.
 
 \tf@snm=\write10
-\openout10 = `"RC Part VII.snm"'.
+\openout10 = `DC2.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
- (./RC Part VII.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 644.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 644.
-Package rerunfilecheck Info: File `"RC Part VII".out' has not changed.
-(rerunfilecheck)             Checksum: 2770670F5FCB6D0085374F89612A4B9F;894.
-Package logreq Info: Writing requests to '"RC Part VII".run.xml'.
-\openout1 = `"RC Part VII.run.xml"'.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 571.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 571.
+ (./DC2.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 571.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 571.
+Package rerunfilecheck Info: File `DC2.out' has not changed.
+(rerunfilecheck)             Checksum: 7F39EC0B670389D4A21384FEE05D0F9A;687.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'DC2.run.xml'.
+\openout1 = `DC2.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25183 strings out of 492649
- 475979 string characters out of 6133385
- 918509 words of memory out of 5000000
- 28460 multiletter control sequences out of 15000+600000
- 20703 words of font info for 75 fonts, out of 8000000 for 9000
+ 25248 strings out of 492649
+ 477858 string characters out of 6133385
+ 922946 words of memory out of 5000000
+ 28530 multiletter control sequences out of 15000+600000
+ 17093 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,23n,62p,839b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "RC Part VII.pdf" (47 pages, 450700 bytes).
+ 56i,16n,62p,968b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on DC2.pdf (39 pages, 1785605 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 378 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
